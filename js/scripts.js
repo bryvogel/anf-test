@@ -17,7 +17,8 @@ $(document).ready(function() {
           // options
           cellAlign: 'left',
           contain: true,
-          wrapAround: true
+          wrapAround: true,
+          prevNextButtons: false
         });
 
         $("input[name$='swatch']").click(function(){
