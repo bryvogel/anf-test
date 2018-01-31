@@ -435,8 +435,8 @@ Scrollable Area
 
     }
 
-    .main-carousel {
-        display: none;
+    .mobile-images {
+        // visibility: collapse;
 
         img {
             width: 100vw;
@@ -770,10 +770,24 @@ Responsive Media Queries
         margin: 0;
     }
 
-    .main-carousel {
-        display: block !important;
+    #thumb-container, .product-images {
+        display: none !important;
+        visibility: collapse;
     }
 
+    .mobile-images {
+    }
+
+    .main-carousel {
+    }
+
+
+
+}
+@media screen and (min-width:540px) {
+    .mobile-images, .main-carousel {
+      display: none !important;
+    }
 
 
 }
