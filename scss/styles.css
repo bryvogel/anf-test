@@ -1,7 +1,13 @@
 /* Imports*/
 @font-face {
-  font-family: 'TradeGothicCnBold';
-  src: url("./font/trade-gothic-condensed-bold.ttf") format("truetype"); }
+  font-family: 'Trade Gothic CnBold';
+  src: url("../font/trade-gothic-condensed-bold.eot") format("eot"), url("../font/trade-gothic-condensed-bold.woff") format("woff"), url("../font/trade-gothic-condensed-bold.ttf") format("truetype"), url("../font/trade-gothic-condensed-bold.svg") format("svg"); }
+@font-face {
+  font-family: 'Trade Gothic Bold';
+  src: url("../font/trade-gothic-bold.eot") format("eot"), url("../font/trade-gothic-bold.woff") format("woff"), url("../font/trade-gothic-bold.ttf") format("truetype"), url("../font/trade-gothic-bold.svg") format("svg"); }
+@font-face {
+  font-family: 'Trade Gothic';
+  src: url("../font/trade-gothic-regular.eot") format("eot"), url("../font/trade-gothic-regular.woff") format("woff"), url("../font/trade-gothic-regular.ttf") format("truetype"), url("../font/trade-gothic-regular.svg") format("svg"); }
 /* ==========================================================================
 Typography
 ========================================================================== */
@@ -18,10 +24,10 @@ h1 {
 
 h2 {
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   color: #63605a;
-  font-family: 'TradeGothicCnBold';
+  font-family: 'Trade Gothic CnBold';
   letter-spacing: 0.7px; }
 
 h3 {
@@ -70,10 +76,10 @@ h1 {
 
 h2 {
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   color: #63605a;
-  font-family: 'TradeGothicCnBold';
+  font-family: 'Trade Gothic CnBold';
   letter-spacing: 0.7px; }
 
 h3 {
@@ -212,7 +218,7 @@ body {
 
 html,
 body {
-  font-family: "TradeGothicCnBold", sans-serif;
+  font-family: "Trade Gothic", sans-serif;
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 1.3px;

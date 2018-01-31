@@ -1,10 +1,17 @@
 /* Imports*/
 @font-face{
-font-family:'TradeGothicCnBold';
-src:url('./font/trade-gothic-condensed-bold.ttf') format('truetype');
+font-family:'Trade Gothic CnBold';
+src:url('../font/trade-gothic-condensed-bold.eot') format('eot'),url('../font/trade-gothic-condensed-bold.woff') format('woff'),url('../font/trade-gothic-condensed-bold.ttf') format('truetype'),url('../font/trade-gothic-condensed-bold.svg') format('svg');
+}
+@font-face{
+font-family:'Trade Gothic Bold';
+src:url('../font/trade-gothic-bold.eot') format('eot'),url('../font/trade-gothic-bold.woff') format('woff'),url('../font/trade-gothic-bold.ttf') format('truetype'),url('../font/trade-gothic-bold.svg') format('svg');
 }
 
-
+@font-face{
+font-family:'Trade Gothic';
+src:url('../font/trade-gothic-regular.eot') format('eot'),url('../font/trade-gothic-regular.woff') format('woff'),url('../font/trade-gothic-regular.ttf') format('truetype'),url('../font/trade-gothic-regular.svg') format('svg');
+}
 
 @import 'partials/typography';
 @import 'partials/buttons';

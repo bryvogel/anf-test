@@ -1,6 +1,6 @@
 // Typography partial
 @import 'colors'; // Fonts
-$sans-serif: 'TradeGothicCnBold',sans-serif;
+$sans-serif: 'Trade Gothic',sans-serif;
 $serif: 'Garamond', serif;
  // Weights
 $light: 300;
@@ -49,10 +49,10 @@ h1
 h2
 {
     font-size: $font-size-h2;
-    font-weight: $bold;
+    font-weight: $normal;
     text-transform: uppercase;
     color: $dark-teal;
-    font-family: 'TradeGothicCnBold';
+    font-family: 'Trade Gothic CnBold';
     letter-spacing: 0.7px;
 }
 h3
