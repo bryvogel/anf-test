@@ -676,11 +676,11 @@ Responsive Media Queries
     .flickity-page-dots .dot {
       border: 1px solid #4c4c4c;
       opacity: 1;
-      background: rgba(76, 76, 76, 0);
+      background: #ffffff;
       width: 8px;
       height: 8px; }
-      .flickity-page-dots .dot .dot .is-selected {
-        background: #4c4c4c; }
+    .flickity-page-dots .is-selected {
+      background: #4c4c4c; }
 
   .mobile-images {
     display: grid;
@@ -688,6 +688,13 @@ Responsive Media Queries
     .mobile-images img {
       width: 100vw;
       height: auto; }
+    .mobile-images #spacer {
+      visibility: hidden;
+      z-index: 999;
+      position: absolute; }
+    .mobile-images .main-carousel {
+      position: relative;
+      float: top; }
 
   .product-page__main-container {
     margin: 0;
@@ -697,107 +704,7 @@ Responsive Media Queries
   .product-info {
     margin: 0 5%;
     position: relative;
-    width: 90%; }
-    .product-info .product-header {
-      border-bottom: 1px solid #dad9d0;
-      margin-bottom: 25px;
-      padding-bottom: 20px; }
-      .product-info .product-header h2 {
-        margin-top: 0; }
-      .product-info .product-header img {
-        width: 260px;
-        margin-top: -20px; }
-    .product-info .product-choices {
-      border-bottom: 1px solid #dad9d0;
-      margin-bottom: 40px;
-      padding-bottom: 30px; }
-      .product-info .product-choices .product-swatches {
-        display: inline-block;
-        margin-top: 10px; }
-        .product-info .product-choices .product-swatches .swatch {
-          display: none !important; }
-        .product-info .product-choices .product-swatches .label_swatch {
-          border: 2px solid transparent;
-          margin: 0 9px 12px -4px;
-          transition: 100ms;
-          z-index: 5; }
-          .product-info .product-choices .product-swatches .label_swatch:hover, .product-info .product-choices .product-swatches .label_swatch:focus {
-            border-color: #a9a7a3; }
-          .product-info .product-choices .product-swatches .label_swatch img {
-            width: 42px;
-            height: 31px;
-            overflow: hidden;
-            margin: 2px; }
-        .product-info .product-choices .product-swatches .swatch:checked + label {
-          border-color: #000; }
-        .product-info .product-choices .product-swatches label {
-          cursor: pointer; }
-        .product-info .product-choices .product-swatches .disabled {
-          width: 52px;
-          height: 47px;
-          border-bottom: 2px solid #ffffff;
-          -webkit-transform: translateY(-20px) translateX(5px) rotate(34deg);
-          position: absolute;
-          margin-top: -39px;
-          margin-left: 5px; }
-      .product-info .product-choices .product-size {
-        display: inline-block;
-        margin-top: 15px; }
-        .product-info .product-choices .product-size .label_size {
-          border: 1px solid #3a3a39;
-          width: 42px;
-          height: 31px;
-          text-align: center;
-          font-weight: 300;
-          font-size: 11px;
-          padding-top: 7px;
-          transition: 100ms;
-          margin: 0 10px 20px 0; }
-        .product-info .product-choices .product-size .size:checked + label, .product-info .product-choices .product-size .label_size:hover {
-          background: #3a3a39;
-          color: #ffffff;
-          transition: 100ms; }
-        .product-info .product-choices .product-size label {
-          cursor: pointer; }
-      .product-info .product-choices img {
-        width: 125px;
-        margin-left: -4px; }
-    .product-info .atb {
-      display: grid; }
-      .product-info .atb .buttons {
-        display: block;
-        margin-top: 30px; }
-        .product-info .atb .buttons button {
-          box-shadow: 0 2px 0 0 #00451a;
-          background-color: #00782e;
-          height: 48px;
-          margin-bottom: 2px;
-          text-transform: capitalize;
-          transition: color .5s,background-color .5s;
-          border: none;
-          cursor: pointer;
-          outline: 0;
-          text-decoration: none;
-          width: calc(100% - 60px);
-          position: relative;
-          float: left; }
-          .product-info .atb .buttons button a {
-            color: #fffef7;
-            font-size: 15px;
-            font-weight: 600;
-            letter-spacing: 1.2px;
-            font-family: 'Trade Gothic'; }
-        .product-info .atb .buttons .heart {
-          border: 1px solid #63605a;
-          margin-left: 10px;
-          height: 48px;
-          width: 48px;
-          float: right;
-          text-align: center; }
-          .product-info .atb .buttons .heart svg {
-            width: 22px;
-            padding-top: 12px;
-            fill: #63605a; } }
+    width: 90%; } }
 @media screen and (min-width: 540px) {
   .mobile-images {
     display: none !important;
