@@ -523,6 +523,10 @@ Scrollable Area
         margin-bottom: 25px;
         padding-bottom: 20px;
 
+        h2 {
+            margin-top: 0;
+        }
+
         img {
             width: 260px;
             margin-top:-20px;
@@ -531,7 +535,7 @@ Scrollable Area
 
     .product-choices {
         border-bottom: 1px solid $dark-grey;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         padding-bottom: 30px;
 
 
@@ -634,6 +638,7 @@ Scrollable Area
 
             .buttons {
                 display: block;
+                margin-top: 30px;
 
                 button {
                     box-shadow: 0 2px 0 0 #00451a;
@@ -654,7 +659,9 @@ Scrollable Area
                     a {
                         color: #fffef7;
                         font-size: 15px;
-                        font-weight: $normal;
+                        font-weight: $bold;
+                        letter-spacing: 1.2px;
+                        font-family: 'Trade Gothic';
                     }
                 }
 
@@ -664,8 +671,13 @@ Scrollable Area
                     height: 48px;
                     width: 48px;
                     float: right;
-
                     text-align: center;
+
+                    svg {
+                        width: 22px;
+                        padding-top: 12px;
+                        fill: $dark-teal;
+                    }
                 }
             }
 

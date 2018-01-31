@@ -536,12 +536,14 @@ Scrollable Area
       border-bottom: 1px solid #dad9d0;
       margin-bottom: 25px;
       padding-bottom: 20px; }
+      .product-page__main-container .product-info .product-header h2 {
+        margin-top: 0; }
       .product-page__main-container .product-info .product-header img {
         width: 260px;
         margin-top: -20px; }
     .product-page__main-container .product-info .product-choices {
       border-bottom: 1px solid #dad9d0;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       padding-bottom: 30px; }
       .product-page__main-container .product-info .product-choices .product-swatches {
         display: inline-block;
@@ -597,7 +599,8 @@ Scrollable Area
     .product-page__main-container .product-info .atb {
       display: grid; }
       .product-page__main-container .product-info .atb .buttons {
-        display: block; }
+        display: block;
+        margin-top: 30px; }
         .product-page__main-container .product-info .atb .buttons button {
           box-shadow: 0 2px 0 0 #00451a;
           background-color: #00782e;
@@ -615,7 +618,9 @@ Scrollable Area
           .product-page__main-container .product-info .atb .buttons button a {
             color: #fffef7;
             font-size: 15px;
-            font-weight: 400; }
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            font-family: 'Trade Gothic'; }
         .product-page__main-container .product-info .atb .buttons .heart {
           border: 1px solid #63605a;
           margin-left: 10px;
@@ -623,6 +628,10 @@ Scrollable Area
           width: 48px;
           float: right;
           text-align: center; }
+          .product-page__main-container .product-info .atb .buttons .heart svg {
+            width: 22px;
+            padding-top: 12px;
+            fill: #63605a; }
 
 /* ==========================================================================
 Responsive Media Queries
