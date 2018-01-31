@@ -9,6 +9,17 @@ $(document).ready(function() {
             $('#' + id).removeClass('hide').siblings().addClass('hide');
         });
 
+        $('input[type="checkbox"]').on('change', function() {
+           $('input[type="checkbox"]').not(this).prop('checked', false);
+        });
+
+        $('.main-carousel').flickity({
+          // options
+          cellAlign: 'left',
+          contain: true,
+          wrapAround: true
+        });
+
         $("input[name$='swatch']").click(function(){
         var radio_value = $(this).val();
         if(radio_value=='111') {
