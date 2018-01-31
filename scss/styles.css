@@ -678,6 +678,6 @@ Responsive Media Queries
     visibility: collapse; } }
 @media screen and (min-width: 540px) {
   .mobile-images, .main-carousel {
-    display: none !important; } }
+    visibility: collapse; } }
 
 /*# sourceMappingURL=styles.css.map */
