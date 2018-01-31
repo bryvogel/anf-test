@@ -246,10 +246,19 @@ a {
   transition-timing-function: ease;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-  color: #4c4c4c; }
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: .6px;
+  color: #63605a; }
 
 a:hover {
   text-decoration: none;
+  color: #63605a; }
+
+p {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: .6px;
   color: #63605a; }
 
 ul,
@@ -298,7 +307,7 @@ Main Nav
     padding: 8px 0 0 14px; }
     .header-nav-wrapper .logo img {
       height: 38px;
-      margin-top: -4px; }
+      margin-top: -6px; }
   .header-nav-wrapper .primary-nav-wrapper {
     display: inline-block;
     -webkit-transition: all 300ms;
@@ -311,12 +320,13 @@ Main Nav
       display: inline-block; }
     .header-nav-wrapper nav ul li {
       font-size: 12px;
+      font-family: 'Trade Gothic Bold', sans-serif;
       display: inline-block;
-      padding: 12px 12px 0 0;
+      padding: 14px 30px 0 0;
       text-transform: uppercase; }
       .header-nav-wrapper nav ul li a {
         font-weight: 500;
-        letter-spacing: 1.8px;
+        letter-spacing: .8px;
         position: relative;
         text-decoration: none;
         color: #000000; }
@@ -466,8 +476,9 @@ Scrollable Area
     .upper-breadcrumb .l-breadcrumbs .breadcrumbs-link {
       font-size: 11px;
       line-height: 26px;
-      letter-spacing: 1.8px;
-      font-weight: 300; }
+      letter-spacing: .6px;
+      font-weight: 300;
+      color: #777; }
 
 .product-page__main-container {
   margin: 30px auto 0;
@@ -515,11 +526,6 @@ Scrollable Area
         max-width: 620px;
         width: 100%;
         margin-bottom: 8px; }
-      .product-page__main-container .product-images .product-display .product-large a {
-        font-weight: 300;
-        font-size: 13px;
-        letter-spacing: 2px;
-        color: #5E6265; }
   .product-page__main-container .product-info {
     width: 340px;
     padding-bottom: 35px;
@@ -537,14 +543,9 @@ Scrollable Area
       border-bottom: 1px solid #dad9d0;
       margin-bottom: 30px;
       padding-bottom: 30px; }
-      .product-page__main-container .product-info .product-choices a {
-        font-weight: 300;
-        font-size: 13px;
-        letter-spacing: 2px;
-        color: #5E6265; }
       .product-page__main-container .product-info .product-choices .product-swatches {
         display: inline-block;
-        margin-top: 5px; }
+        margin-top: 10px; }
         .product-page__main-container .product-info .product-choices .product-swatches .swatch {
           display: none !important; }
         .product-page__main-container .product-info .product-choices .product-swatches .label_swatch {
@@ -583,7 +584,7 @@ Scrollable Area
           font-size: 11px;
           padding-top: 7px;
           transition: 100ms;
-          margin: 0 10px 15px 0; }
+          margin: 0 10px 20px 0; }
         .product-page__main-container .product-info .product-choices .product-size .size:checked + label, .product-page__main-container .product-info .product-choices .product-size .label_size:hover {
           background: #3a3a39;
           color: #ffffff;
@@ -591,15 +592,10 @@ Scrollable Area
         .product-page__main-container .product-info .product-choices .product-size label {
           cursor: pointer; }
       .product-page__main-container .product-info .product-choices img {
-        width: 130px; }
+        width: 125px;
+        margin-left: -4px; }
     .product-page__main-container .product-info .atb {
       display: grid; }
-      .product-page__main-container .product-info .atb a {
-        font-weight: 300;
-        font-size: 13px;
-        letter-spacing: 2px;
-        color: #5E6265;
-        margin-bottom: 30px; }
       .product-page__main-container .product-info .atb .buttons {
         display: block; }
         .product-page__main-container .product-info .atb .buttons button {

@@ -65,12 +65,22 @@ a
     -webkit-transition-duration: 200ms;
             transition-duration: 200ms;
 
-    color: $slate;
+    font-weight: $light;
+    font-size: 13px;
+    letter-spacing: .6px;
+    color: $dark-teal;
 }
 a:hover
 {
     text-decoration: none;
 
+    color: $dark-teal;
+}
+
+p {
+    font-weight: $strong;
+    font-size: 15px;
+    letter-spacing: .6px;
     color: $dark-teal;
 }
 ul,
@@ -137,7 +147,7 @@ Main Nav
 
         img {
           height: 38px;
-          margin-top: -4px;
+          margin-top: -6px;
         }
 
     }
@@ -162,10 +172,11 @@ Main Nav
         ul li
         {
             font-size: $font-size-nav;
+            font-family: 'Trade Gothic Bold', sans-serif;
 
             display: inline-block;
 
-            padding: 12px 12px 0 0;
+            padding: 14px 30px 0 0;
 
             text-transform: uppercase;
 
@@ -173,7 +184,7 @@ Main Nav
             a
             {
                 font-weight: $semibold;
-                letter-spacing: 1.8px;
+                letter-spacing: .8px;
 
                 position: relative;
 
@@ -403,8 +414,9 @@ Scrollable Area
       {
         font-size: 11px;
         line-height: 26px;
-        letter-spacing: 1.8px;
+        letter-spacing: .6px;
         font-weight: $light;
+        color: #777
       }
     }
 }
@@ -490,12 +502,6 @@ Scrollable Area
                   margin-bottom: 8px;
                 }
 
-                a {
-                    font-weight: $light;
-                    font-size: 13px;
-                    letter-spacing: 2px;
-                    color: $light-slate;
-                }
             }
         }
 
@@ -528,16 +534,10 @@ Scrollable Area
         margin-bottom: 30px;
         padding-bottom: 30px;
 
-        a {
-            font-weight: $light;
-            font-size: 13px;
-            letter-spacing: 2px;
-            color: $light-slate;
-        }
 
     .product-swatches {
         display: inline-block;
-        margin-top: 5px;
+        margin-top: 10px;
 
         .swatch {
             display: none !important;
@@ -605,7 +605,7 @@ Scrollable Area
 
               transition: 100ms;
 
-              margin: 0 10px 15px 0;
+              margin: 0 10px 20px 0;
 
               }
 
@@ -621,7 +621,8 @@ Scrollable Area
           }
 
           img {
-              width: 130px;
+              width: 125px;
+              margin-left: -4px;
           }
 
 
@@ -630,15 +631,6 @@ Scrollable Area
 
         .atb {
             display: grid;
-
-            a {
-                font-weight: $light;
-                font-size: 13px;
-                letter-spacing: 2px;
-                color: $light-slate;
-
-                margin-bottom: 30px;
-            }
 
             .buttons {
                 display: block;
