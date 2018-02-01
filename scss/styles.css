@@ -714,6 +714,7 @@ Responsive Media Queries
       background: #4c4c4c; }
 
   .mobile-images {
+    display: block;
     margin-bottom: 40px;
     width: 100%; }
     .mobile-images .bx-next, .mobile-images .bx-prev {
@@ -736,8 +737,7 @@ Responsive Media Queries
     width: 90%; } }
 @media screen and (min-width: 540px) {
   .mobile-images {
-    display: none !important;
-    visibility: collapse; } }
+    display: none; } }
 @media screen and (max-width: 480px) {
   .option-display {
     width: 100%; }

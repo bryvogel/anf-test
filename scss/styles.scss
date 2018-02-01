@@ -810,7 +810,7 @@ Responsive Media Queries
     }
 
     .mobile-images {
-        // display: grid;
+        display: block;
         margin-bottom: 40px;
         width: 100%;
 
@@ -822,7 +822,6 @@ Responsive Media Queries
             width: 100vw;
             height: auto;
         }
-
 
         .main-carousel {
             position: relative;
@@ -845,8 +844,7 @@ Responsive Media Queries
 }
 @media screen and (min-width:540px) {
     .mobile-images {
-      display: none !important;
-      visibility: collapse;
+      display: none;
     }
 
 
