@@ -1,4 +1,4 @@
-$(document).ready(function() {
+three$(document).ready(function() {
 
     /***************** Image Change ******************/
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
         $('.swatch').click(function(){
         var radio_value = $(this).val();
         if(radio_value=='111') {
-          $(".one").show().children().show();
+          $(".one").show();
           $(".two").hide();
           $(".three").hide();
           $(".four").hide();
@@ -29,7 +29,7 @@ $(document).ready(function() {
         }
         else if(radio_value=='222') {
           $(".one").hide();
-          $(".two").show().children().show();
+          $(".two").show();
           $(".three").hide();
           $(".four").hide();
           $(".five").hide();
@@ -40,7 +40,7 @@ $(document).ready(function() {
         else if(radio_value=='333') {
           $(".one").hide();
           $(".two").hide();
-          $(".three").show().children().show();
+          $(".three").show();
           $(".four").hide();
           $(".five").hide();
           $(".six").hide();
@@ -51,7 +51,7 @@ $(document).ready(function() {
           $(".one").hide();
           $(".two").hide();
           $(".three").hide();
-          $(".four").show().children().show();
+          $(".four").show();
           $(".five").hide();
           $(".six").hide();
           $(".seven").hide();
@@ -62,7 +62,7 @@ $(document).ready(function() {
           $(".two").hide();
           $(".three").hide();
           $(".four").hide();
-          $(".five").show().children().show();
+          $(".five").show();
           $(".six").hide();
           $(".seven").hide();
           $(".eight").hide();
@@ -73,7 +73,7 @@ $(document).ready(function() {
           $(".three").hide();
           $(".four").hide();
           $(".five").hide();
-          $(".six").show().children().show();
+          $(".six").show();
           $(".seven").hide();
           $(".eight").hide();
         }
@@ -84,7 +84,7 @@ $(document).ready(function() {
           $(".four").hide();
           $(".five").hide();
           $(".six").hide();
-          $(".seven").show().children().show();
+          $(".seven").show();
           $(".eight").hide();
         }
         else if(radio_value=='888') {
@@ -95,7 +95,7 @@ $(document).ready(function() {
           $(".five").hide();
           $(".six").hide();
           $(".seven").hide();
-          $(".eight").show().children().show();
+          $(".eight").show();
         }
         });
         $('[name="swatch"]:checked').trigger('click');
