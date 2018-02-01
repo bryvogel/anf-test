@@ -678,6 +678,11 @@ Scrollable Area
                     position: relative;
                     float: left;
 
+                    &:hover, &:focus {
+                        background-color: rgb(8,93,39);
+                        transition: 400ms;
+                    }
+
                     a {
                         color: #fffef7;
                         font-size: 15px;

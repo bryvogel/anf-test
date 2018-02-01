@@ -632,6 +632,9 @@ Scrollable Area
           width: calc(100% - 60px);
           position: relative;
           float: left; }
+          .product-page__main-container .product-info .atb .buttons button:hover, .product-page__main-container .product-info .atb .buttons button:focus {
+            background-color: #085d27;
+            transition: 400ms; }
           .product-page__main-container .product-info .atb .buttons button a {
             color: #fffef7;
             font-size: 15px;
