@@ -18,87 +18,88 @@ $(document).ready(function() {
         $('.swatch').click(function(){
         var radio_value = $(this).val();
         if(radio_value=='111') {
-          $(".111").show().children().show();;
-          $(".222").hide();
-          $(".333").hide();
-          $(".444").hide();
-          $(".555").hide();
-          $(".666").hide();
-          $(".777").hide();
-          $(".888").hide();
+          $(".one").css('z-index', 1);
+          $(".two").css('z-index', 3000);
+          $(".three").hide();
+          $(".four").hide();
+          $(".five").hide();
+          $(".six").hide();
+          $(".seven").hide();
+          $(".eight").hide();
         }
         else if(radio_value=='222') {
-          $(".111").hide();
-          $(".222").show().children().show();;
-          $(".333").hide();
-          $(".444").hide();
-          $(".555").hide();
-          $(".666").hide();
-          $(".777").hide();
-          $(".888").hide();
+          $(".one").css('z-index', 3000);
+          $(".two").css('z-index', 1);
+          $(".three").hide();
+          $(".four").hide();
+          $(".five").hide();
+          $(".six").hide();
+          $(".seven").hide();
+          $(".eight").hide();
         }
         else if(radio_value=='333') {
-          $(".111").hide();
-          $(".222").hide();
-          $(".333").show().children().show();;
-          $(".444").hide();
-          $(".555").hide();
-          $(".666").hide();
-          $(".777").hide();
-          $(".888").hide();
+          $(".one").hide();
+          $(".two").hide();
+          $(".three").show().children().show();
+          $(".four").hide();
+          $(".five").hide();
+          $(".six").hide();
+          $(".seven").hide();
+          $(".eight").hide();
         }
         else if(radio_value=='444') {
-          $(".111").hide();
-          $(".222").hide();
-          $(".333").hide();
-          $(".444").show().children().show();;
-          $(".555").hide();
-          $(".666").hide();
-          $(".777").hide();
-          $(".888").hide();
+          $(".one").hide();
+          $(".two").hide();
+          $(".three").hide();
+          $(".four").show().children().show();
+          $(".five").hide();
+          $(".six").hide();
+          $(".seven").hide();
+          $(".eight").hide();
         }
         else if(radio_value=='555') {
-          $(".111").hide();
-          $(".222").hide();
-          $(".333").hide();
-          $(".444").hide();
-          $(".555").show().children().show();;
-          $(".666").hide();
-          $(".777").hide();
-          $(".888").hide();
+          $(".one").hide();
+          $(".two").hide();
+          $(".three").hide();
+          $(".four").hide();
+          $(".five").show().children().show();
+          $(".six").hide();
+          $(".seven").hide();
+          $(".eight").hide();
         }
         else if(radio_value=='666') {
-          $(".111").hide();
-          $(".222").hide();
-          $(".333").hide();
-          $(".444").hide();
-          $(".555").hide();
-          $(".666").show().children().show();;
-          $(".777").hide();
-          $(".888").hide();
+          $(".one").hide();
+          $(".two").hide();
+          $(".three").hide();
+          $(".four").hide();
+          $(".five").hide();
+          $(".six").show().children().show();
+          $(".seven").hide();
+          $(".eight").hide();
         }
         else if(radio_value=='777') {
-          $(".111").hide();
-          $(".222").hide();
-          $(".333").hide();
-          $(".444").hide();
-          $(".555").hide();
-          $(".666").hide();
-          $(".777").show().children().show();;
-          $(".888").hide();
+          $(".one").hide();
+          $(".two").hide();
+          $(".three").hide();
+          $(".four").hide();
+          $(".five").hide();
+          $(".six").hide();
+          $(".seven").show().children().show();
+          $(".eight").hide();
         }
         else if(radio_value=='888') {
-          $(".111").hide();
-          $(".222").hide();
+          $(".one").hide();
+          $(".two").hide();
           $(".333").hide();
-          $(".444").hide();
-          $(".555").hide();
-          $(".666").hide();
-          $(".777").hide();
-          $(".888").show().children().show();;
+          $(".four").hide();
+          $(".five").hide();
+          $(".six").hide();
+          $(".seven").hide();
+          $(".eight").show().children().show();
         }
         });
         $('[name="swatch"]:checked').trigger('click');
+
 
     /***************** Responsive Nav ******************/
 

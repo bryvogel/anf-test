@@ -487,6 +487,7 @@ Scrollable Area
 #scroll {
   height: 100%;
   overflow: scroll-y;
+  -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   margin-top: 57px; }
 
@@ -716,6 +717,10 @@ Responsive Media Queries
     display: block;
     margin-bottom: 40px;
     width: 100%; }
+    .mobile-images .one, .mobile-images .two, .mobile-images .three, .mobile-images .four, .mobile-images .five, .mobile-images .six, .mobile-images .seven, .mobile-images .eight {
+      position: absolute;
+      float: top;
+      z-index: -1; }
     .mobile-images .bx-next, .mobile-images .bx-prev {
       display: none; }
     .mobile-images img {

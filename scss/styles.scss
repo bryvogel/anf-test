@@ -423,6 +423,7 @@ Scrollable Area
 #scroll {
     height: 100%;
     overflow: scroll-y;
+    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     margin-top: 57px;
 }
@@ -804,6 +805,12 @@ Responsive Media Queries
         display: block;
         margin-bottom: 40px;
         width: 100%;
+
+        .one,.two,.three,.four,.five,.six,.seven,.eight {
+            position: absolute;
+            float:top;
+            z-index: -1;
+        }
 
         .bx-next, .bx-prev {
             display: none;
