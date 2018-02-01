@@ -136,8 +136,9 @@ textarea
     transition: 400ms;
     letter-spacing: 1px;
     margin-top: 20px;
+    font-size: 15px;
 
-    &:hover, &:focus {
+    &:hover {
         background-color: rgb(8,93,39);
         transition: 400ms;
     }

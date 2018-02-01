@@ -302,8 +302,9 @@ textarea {
   width: 100%;
   transition: 400ms;
   letter-spacing: 1px;
-  margin-top: 20px; }
-  .button:hover, .button:focus {
+  margin-top: 20px;
+  font-size: 15px; }
+  .button:hover {
     background-color: #085d27;
     transition: 400ms; }
 
