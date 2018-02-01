@@ -487,6 +487,7 @@ Scrollable Area
 #scroll {
   height: 100%;
   overflow: scroll-y;
+  overflow-x: hidden;
   margin-top: 57px; }
 
 .upper-breadcrumb {
@@ -702,15 +703,13 @@ Responsive Media Queries
     display: none !important;
     visibility: collapse; }
 
-  .flickity-page-dots {
-    bottom: -28px; }
-    .flickity-page-dots .dot {
-      border: 1px solid #4c4c4c;
-      opacity: 1;
-      background: #ffffff;
-      width: 8px;
-      height: 8px; }
-    .flickity-page-dots .is-selected {
+  .bx-wrapper .bx-pager.bx-default-pager a {
+    border: 1px solid #4c4c4c;
+    opacity: 1;
+    background: #ffffff;
+    width: 8px;
+    height: 8px; }
+    .bx-wrapper .bx-pager.bx-default-pager a .active {
       background: #4c4c4c; }
 
   .mobile-images {
@@ -720,11 +719,8 @@ Responsive Media Queries
     .mobile-images .bx-next, .mobile-images .bx-prev {
       display: none; }
     .mobile-images img {
-      width: 100vw;
+      width: 100%;
       height: auto; }
-    .mobile-images .main-carousel {
-      position: relative;
-      float: top; }
 
   .product-page__main-container {
     margin: 0;

@@ -420,27 +420,23 @@ Main Nav
 /* ==========================================================================
 Scrollable Area
 ========================================================================== */
-#scroll
-{
+#scroll {
     height: 100%;
     overflow: scroll-y;
-
+    overflow-x: hidden;
     margin-top: 57px;
 }
 
-.upper-breadcrumb
-{
+.upper-breadcrumb {
     background-color: $light-grey;
 
     display: block;
 
-    .l-breadcrumbs
-    {
+    .l-breadcrumbs {
       padding: 5px 0 5px 24px;
       height: 35px;
 
-      .breadcrumbs-link
-      {
+      .breadcrumbs-link {
         font-size: 11px;
         line-height: 26px;
         letter-spacing: .6px;
@@ -450,8 +446,7 @@ Scrollable Area
     }
 }
 
-.product-page__main-container
-{
+.product-page__main-container {
     margin: 30px 8% 0;
     width: 96%;
     display: block;
@@ -793,18 +788,14 @@ Responsive Media Queries
         visibility: collapse;
     }
 
-    .flickity-page-dots {
-        bottom: -28px;
+    .bx-wrapper .bx-pager.bx-default-pager a {
+        border: 1px solid $slate;
+        opacity: 1;
+        background: $white;
+        width: 8px;
+        height: 8px;
 
-        .dot {
-            border: 1px solid $slate;
-            opacity: 1;
-            background: $white;
-            width: 8px;
-            height: 8px;
-        }
-
-        .is-selected {
+        .active {
             background: $slate;
         }
     }
@@ -819,22 +810,16 @@ Responsive Media Queries
         }
 
         img {
-            width: 100vw;
+            width: 100%;
             height: auto;
         }
-
-        .main-carousel {
-            position: relative;
-            float: top;
-       }
     }
 
-    .product-page__main-container
-    {
+    .product-page__main-container {
         margin: 0;
         width: 100%;
         display: block;
-        }
+    }
 
         .product-info {
             margin: 0 5%;
