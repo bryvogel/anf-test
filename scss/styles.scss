@@ -23,6 +23,7 @@ Global Styles
 body
 {
     background-color: $white;
+    overflow-x: hidden;
 }
 html,
 body
@@ -32,7 +33,6 @@ body
     font-weight: $normal;
     letter-spacing: 1.3px;
 
-    overflow-x: hidden;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -121,21 +121,32 @@ textarea
     margin-top: 50px;
 }
 
-.password {
-    padding: 0 40px;
+.has-right-margin {
+    margin-right: 20px;
+}
+
+.button {
+    // padding: 0 40px;
     color: $white;
     background-color: #00782e;
     box-shadow: 0 2px 0 0 #00451a;
     border: none;
     height: 48px;
+    width: 100%;
     transition: 400ms;
     letter-spacing: 1px;
+    margin-top: 20px;
 
     &:hover, &:focus {
         background-color: rgb(8,93,39);
         transition: 400ms;
     }
 
+}
+
+.option-display {
+    width: 360px;
+    margin: auto;
 }
 
 /* ==========================================================================
@@ -719,60 +730,48 @@ Responsive Media Queries
 
 
 }
-@media screen and (max-width:1024px)
-{
+@media screen and (max-width:1024px) {
 
-    .primary-nav-wrapper
-    {
+    .primary-nav-wrapper {
         position: fixed;
         z-index: 99;
         top: 0;
         left: 0;
-
         visibility: hidden;
-
         width: 100%;
         height: 100%;
-
         opacity: 0;
 
     }
-    .navicon
-    {
+    .navicon {
         visibility: visible;
     }
 
-    .header-nav-wrapper
-    {
+    .header-nav-wrapper {
         height: 46px;
     }
 
-    .header-nav-wrapper .logo
-    {
+    .header-nav-wrapper .logo {
         width: 100%;
         text-align: center;
         padding-left: 0;
 
-        img
-        {
+        img {
             margin-top: -2px;
             height: 33px;
         }
     }
 
-    .thrice-nav-wrapper
-    {
+    .thrice-nav-wrapper {
       visibility: visible;
       opacity: 1;
     }
 
-    #scroll
-    {
+    #scroll {
         margin-top: 46px;
     }
 }
-@media screen and (max-width:768px)
-{
+@media screen and (max-width:768px) {
 
 }
 @media screen and (max-width:540px) {
@@ -823,19 +822,13 @@ Responsive Media Queries
         margin: 0;
         width: 100%;
         display: block;
-
         }
-
 
         .product-info {
             margin: 0 5%;
             position: relative;
             width: 90%;
         }
-
-
-
-
 }
 @media screen and (min-width:540px) {
     .mobile-images {
@@ -846,23 +839,17 @@ Responsive Media Queries
 
 
 }
-@media screen and (max-width:480px)
-{
-    .header-nav-wrapper
-    {
-    }
-    .header-nav-wrapper .logo
-    {
-    }
-    .navicon
-    {
+@media screen and (max-width:480px) {
+    .option-display {
+        width: 100%;
 
-    }
-    .header-nav-wrapper .logo
-    {
+        h2 {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
     }
 
 }
-@media screen and (max-width:360px)
-{
+@media screen and (max-width:360px) {
+
 }
