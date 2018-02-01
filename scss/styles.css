@@ -290,6 +290,19 @@ textarea {
 .has-top-margin {
   margin-top: 50px; }
 
+.password {
+  padding: 0 40px;
+  color: #ffffff;
+  background-color: #00782e;
+  box-shadow: 0 2px 0 0 #00451a;
+  border: none;
+  height: 48px;
+  transition: 400ms;
+  letter-spacing: 1px; }
+  .password:hover, .password:focus {
+    background-color: #085d27;
+    transition: 400ms; }
+
 /* ==========================================================================
 Main Nav
 ========================================================================== */
