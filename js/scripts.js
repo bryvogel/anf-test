@@ -18,8 +18,8 @@ $(document).ready(function() {
         $('.swatch').click(function(){
         var radio_value = $(this).val();
         if(radio_value=='111') {
-          $(".one").css('z-index', 1);
-          $(".two").css('z-index', 3000);
+          $(".one").show().children().show();
+          $(".two").hide();
           $(".three").hide();
           $(".four").hide();
           $(".five").hide();
@@ -28,8 +28,8 @@ $(document).ready(function() {
           $(".eight").hide();
         }
         else if(radio_value=='222') {
-          $(".one").css('z-index', 3000);
-          $(".two").css('z-index', 1);
+          $(".one").hide();
+          $(".two").show().children().show();
           $(".three").hide();
           $(".four").hide();
           $(".five").hide();
