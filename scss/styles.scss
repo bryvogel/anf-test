@@ -451,7 +451,7 @@ Scrollable Area
 
 .product-page__main-container
 {
-    margin: 30px auto 0;
+    margin: 30px 8% 0;
     width: 96%;
     display: block;
 
@@ -736,6 +736,10 @@ Responsive Media Queries
 
 }
 @media screen and (max-width:1024px) {
+  .product-page__main-container {
+      margin: 30px 4% 0;
+  }
+
 
     .primary-nav-wrapper {
         position: fixed;
@@ -777,6 +781,9 @@ Responsive Media Queries
     }
 }
 @media screen and (max-width:768px) {
+  .product-page__main-container {
+      margin: 30px auto 0;
+  }
 
 }
 @media screen and (max-width:540px) {

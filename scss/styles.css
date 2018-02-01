@@ -502,7 +502,7 @@ Scrollable Area
       color: #777; }
 
 .product-page__main-container {
-  margin: 30px auto 0;
+  margin: 30px 8% 0;
   width: 96%;
   display: block; }
   .product-page__main-container #thumb-container {
@@ -660,6 +660,9 @@ Responsive Media Queries
   .product-page__main-container {
     width: 88%; } }
 @media screen and (max-width: 1024px) {
+  .product-page__main-container {
+    margin: 30px 4% 0; }
+
   .primary-nav-wrapper {
     position: fixed;
     z-index: 99;
@@ -690,6 +693,9 @@ Responsive Media Queries
 
   #scroll {
     margin-top: 46px; } }
+@media screen and (max-width: 768px) {
+  .product-page__main-container {
+    margin: 30px auto 0; } }
 @media screen and (max-width: 540px) {
   #thumb-container, .product-images {
     display: none !important;
