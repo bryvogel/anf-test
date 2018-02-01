@@ -1,4 +1,4 @@
-three$(document).ready(function() {
+$(document).ready(function() {
 
     /***************** Image Change ******************/
 
@@ -90,7 +90,7 @@ three$(document).ready(function() {
         else if(radio_value=='888') {
           $(".one").hide();
           $(".two").hide();
-          $(".333").hide();
+          $(".three").hide();
           $(".four").hide();
           $(".five").hide();
           $(".six").hide();
