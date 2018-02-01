@@ -13,7 +13,29 @@ $(document).ready(function() {
            $('input[type="checkbox"]').not(this).prop('checked', false);
         });
 
-        $('.main-carousel').bxSlider();
+        // $('.main-carousel').bxSlider();
+
+        var mySlider;
+
+        $(function() {
+            mySlider = $('.main-carousel').bxSlider({
+                easing: 'easeInCubic',
+                displaySlideQty: 1,
+                moveSlideQty: 1,
+                infiniteLoop: true,
+                hideControlOnEnd: true,
+                onSliderLoad: function() {
+                  $(".one").hide();
+                  $(".two").hide();
+                  $(".three").hide();
+                  $(".four").hide();
+                  $(".five").hide();
+                  $(".six").hide();
+                  $(".seven").hide();
+                  $(".eight").hide();
+                }
+            });
+        });
 
         $('.swatch').click(function(){
         var radio_value = $(this).val();

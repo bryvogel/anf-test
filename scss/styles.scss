@@ -802,12 +802,11 @@ Responsive Media Queries
     }
 
     .mobile-images {
-        display: block;
+        display: inline;
         margin-bottom: 40px;
         width: 100%;
 
         .one,.two,.three,.four,.five,.six,.seven,.eight {
-            // float:top;
         }
 
         .bx-next, .bx-prev {

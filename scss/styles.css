@@ -714,7 +714,7 @@ Responsive Media Queries
       background: #4c4c4c; }
 
   .mobile-images {
-    display: block;
+    display: inline;
     margin-bottom: 40px;
     width: 100%; }
     .mobile-images .bx-next, .mobile-images .bx-prev {
