@@ -713,15 +713,13 @@ Responsive Media Queries
       background: #4c4c4c; }
 
   .mobile-images {
-    display: grid;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    width: 100%; }
+    .mobile-images .bx-next, .mobile-images .bx-prev {
+      display: none; }
     .mobile-images img {
       width: 100vw;
       height: auto; }
-    .mobile-images #spacer {
-      visibility: hidden;
-      z-index: 999;
-      position: absolute; }
     .mobile-images .main-carousel {
       position: relative;
       float: top; }

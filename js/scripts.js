@@ -13,13 +13,15 @@ $(document).ready(function() {
            $('input[type="checkbox"]').not(this).prop('checked', false);
         });
 
-        $('.main-carousel').flickity({
-          // options
-          cellAlign: 'left',
-          contain: true,
-          wrapAround: true,
-          prevNextButtons: false
-        });
+        // $('.main-carousel').flickity({
+        //   // options
+        //   cellAlign: 'left',
+        //   contain: true,
+        //   wrapAround: true,
+        //   prevNextButtons: false
+        // });
+
+        $('.main-carousel').bxSlider();
 
         $("input[name$='swatch']").click(function(){
         var radio_value = $(this).val();

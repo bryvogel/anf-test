@@ -809,19 +809,19 @@ Responsive Media Queries
     }
 
     .mobile-images {
-        display: grid;
+        // display: grid;
         margin-bottom: 40px;
+        width: 100%;
+
+        .bx-next, .bx-prev {
+            display: none;
+        }
 
         img {
             width: 100vw;
             height: auto;
         }
 
-        #spacer {
-            visibility: hidden;
-            z-index: 999;
-            position: absolute;
-        }
 
         .main-carousel {
             position: relative;
