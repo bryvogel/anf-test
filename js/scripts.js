@@ -25,7 +25,7 @@ $(document).ready(function() {
                 infiniteLoop: true,
                 hideControlOnEnd: true,
                 onSliderLoad: function() {
-                  $(".one").hide();
+                  $(".one").show();
                   $(".two").hide();
                   $(".three").hide();
                   $(".four").hide();
