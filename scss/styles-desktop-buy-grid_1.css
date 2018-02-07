@@ -522,6 +522,13 @@ Scrollable Area
   display: block; }
   .product-page__main-container .header {
     margin: 0 0 30px; }
+    .product-page__main-container .header a {
+      font-size: 11px; }
+    .product-page__main-container .header h2 {
+      color: #000000;
+      font-size: 27px;
+      margin: 0;
+      line-height: 36px; }
   .product-page__main-container #thumb-container {
     width: calc(100% - 530px);
     display: inline-block;
@@ -570,11 +577,25 @@ Scrollable Area
       border-bottom: 1px solid #dad9d0;
       margin-bottom: 25px;
       padding-bottom: 20px; }
-      .product-page__main-container .product-info .product-header h2 {
-        margin-top: 0; }
       .product-page__main-container .product-info .product-header img {
-        width: 260px;
-        margin-top: -20px; }
+        width: 130px; }
+      .product-page__main-container .product-info .product-header .price {
+        margin-top: 10px;
+        font-size: 13px; }
+        .product-page__main-container .product-info .product-header .price a {
+          margin-right: 12px;
+          font-weight: 600;
+          letter-spacing: 0.6px; }
+        .product-page__main-container .product-info .product-header .price .sale {
+          font-weight: 300;
+          color: #D00000; }
+        .product-page__main-container .product-info .product-header .price p {
+          font-size: 13px;
+          line-height: 20px;
+          font-weight: 300;
+          margin-top: 5px;
+          padding-bottom: 0;
+          letter-spacing: 0.4px; }
     .product-page__main-container .product-info .product-choices {
       border-bottom: 1px solid #dad9d0;
       margin-bottom: 40px;

@@ -468,7 +468,18 @@ Scrollable Area
     display: block;
 
     .header {
-        margin: 0 0 30px;;
+        margin: 0 0 30px;
+
+        a {
+            font-size: 11px;
+        }
+
+        h2 {
+            color: $black;
+            font-size: 27px;
+            margin: 0;
+            line-height: 36px;
+        }
     }
 
     #thumb-container {
@@ -558,13 +569,34 @@ Scrollable Area
         margin-bottom: 25px;
         padding-bottom: 20px;
 
-        h2 {
-            margin-top: 0;
+        img {
+            width: 130px;
         }
 
-        img {
-            width: 260px;
-            margin-top:-20px;
+        .price {
+            margin-top: 10px;
+            font-size: 13px;
+
+            a {
+                margin-right: 12px;
+                font-weight: $bold;
+                letter-spacing: 0.6px;
+            }
+
+            .sale {
+                font-weight: $light;
+                color: #D00000;
+            }
+
+            p {
+                font-size: 13px;
+                line-height: 20px;
+                font-weight: $light;
+                margin-top: 5px;
+                padding-bottom: 0;
+                letter-spacing: 0.4px;
+            }
+
         }
     }
 
