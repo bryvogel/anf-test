@@ -743,9 +743,11 @@ Scrollable Area
         width: 360px;
         margin-top: 30px; }
 
-.content img {
-  width: 100%;
-  max-width: 1200px; }
+.content {
+  text-align: center; }
+  .content img {
+    width: 100%;
+    max-width: 1200px; }
 
 /* ==========================================================================
 Responsive Media Queries
