@@ -742,6 +742,49 @@ Scrollable Area
       .product-page__main-container .product-info .atb img {
         width: 360px;
         margin-top: 30px; }
+  .product-page__main-container .tab {
+    position: relative;
+    margin-bottom: 0;
+    width: 100%;
+    color: #000000;
+    overflow: hidden;
+    /* :checked */
+    /* Icon */ }
+    .product-page__main-container .tab input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1; }
+    .product-page__main-container .tab label {
+      position: relative;
+      display: block;
+      padding: 0;
+      font-weight: bold;
+      line-height: 3;
+      cursor: pointer; }
+    .product-page__main-container .tab .tab-content {
+      max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height .35s;
+      -o-transition: max-height .35s;
+      transition: max-height .35s; }
+    .product-page__main-container .tab #tab-one:checked ~ .tab-content {
+      max-height: 12em; }
+    .product-page__main-container .tab label::after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 3em;
+      height: 3em;
+      line-height: 2.8;
+      text-align: center;
+      -webkit-transition: all .35s;
+      -o-transition: all .35s;
+      transition: all .35s; }
+    .product-page__main-container .tab #tab-one + label::after {
+      content: "+"; }
+    .product-page__main-container .tab #tab-one:checked + label::after {
+      transform: rotate(135deg); }
 
 .content {
   text-align: center; }
