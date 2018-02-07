@@ -640,60 +640,52 @@ Scrollable Area
             .radio-length {
 
                 .radio-size {
-                    display: inline-block;
+                    display: inline;
                     margin-right: 15px;
-
-                    .label_radio{
-                        display: inline-flex;
-
-
-                        padding: 10px 15px 10px 10px;
-
-                        height: 40px;
-                        min-width: 40px;
-
-                        font-size: 13px;
-                        font-weight: $light;
-
-                        border: 1px solid #CCCCCC;
-                        border-radius: 22.5px;
-
-                    .length {
-                        display: none;
-                    }
-
-                    .radio-border {
-                        height: 20px;
-                        width: 20px;
-                        border: 1px solid $black;
-                        border-radius: 50%;
-
-                        margin: -2px 10px 0 0;
-
-                        padding: 2px;
-
-                        .bckgd {
-                            width: 14px;
-                            height: 14px;
-                            border-radius: 50%;
-                            background-color: $black;
-
-                            visibility: hidden;
-                        }
-                    }
-
-                    .length:checked + label {
-                        .radio-border.bckgd {
-                            visibility: visible;
-                        }
-                    }
-
-                    label {
-                        cursor: pointer;
-                    }
                 }
-              }
-          }
+
+                .length {
+                display: none;
+                }
+
+                .label_radio {
+                display: inline-flex;
+                position: relative;
+                padding: 11px 20px 15px 40px;
+                height: 40px;
+                border: 1px solid $black;
+                border-radius: 100px;
+                font-size: 13px;
+                font-weight: $light;
+                background-color: $white;
+                cursor: pointer;
+                user-select: none;
+                transition: background-color .2s;
+                }
+
+                .label_radio::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 10px;
+                bottom: 10px;
+                left: 10px;
+                width: 20px;
+                height: 20px;
+                border: 1px solid $black;
+                border-radius: 50%;
+                transition: background-color .2s;
+                }
+
+                input:checked + label {
+                background-color: $white;
+                }
+
+                input:checked + label::before {
+                background-color: $black;
+                }
+            }
+
 
             .label_size {
               border: 1px solid $porcelain;
@@ -703,18 +695,15 @@ Scrollable Area
               font-weight: $light;
               font-size: 13px;
               padding-top: 11px;
-
               transition: 100ms;
-
               margin: -1px -7px 0 0;
-
               }
 
               .size:checked + label, .label_size:hover {
                   background: $porcelain;
                   color: $white;
                   transition: 100ms;
-                }
+              }
 
               label {
                 cursor: pointer;
