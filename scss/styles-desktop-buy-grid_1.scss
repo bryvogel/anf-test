@@ -824,13 +824,25 @@ Scrollable Area
                 }
             }
 
+            img {
+                width: 360px;
+                margin-top: 30px;
+            }
+
 
         }
 
     }
+
 }
 
+.content {
 
+    img {
+        width: 100%;
+        max-width: 1200px;
+    }
+}
 
 
 

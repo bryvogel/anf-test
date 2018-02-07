@@ -739,6 +739,13 @@ Scrollable Area
             width: 22px;
             padding-top: 12px;
             fill: #63605a; }
+      .product-page__main-container .product-info .atb img {
+        width: 360px;
+        margin-top: 30px; }
+
+.content img {
+  width: 100%;
+  max-width: 1200px; }
 
 /* ==========================================================================
 Responsive Media Queries
