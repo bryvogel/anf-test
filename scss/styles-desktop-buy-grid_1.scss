@@ -602,7 +602,7 @@ Scrollable Area
 
     .product-choices {
         border-bottom: 1px solid $dark-grey;
-        margin-bottom: 40px;
+        // margin-bottom: 40px;
         padding-bottom: 30px;
 
 
@@ -667,7 +667,7 @@ Scrollable Area
 
         .product-size {
             display: inline-block;
-            margin-top: 15px;
+            margin-top: 25px;
 
             .radio-length {
 
@@ -743,16 +743,36 @@ Scrollable Area
           }
 
           img {
-              width: 125px;
+              width: 120px;
               margin-left: -4px;
+              margin-top:15px;
           }
 
 
 
         }
 
+        .fit {
+
+            h3 {
+                font-size: 15px;
+                color: $black;
+                font-weight: $bold;
+                margin: 18px 0;
+                padding: 0;
+            }
+        }
+
         .atb {
             display: grid;
+            border-top: 1px solid $dark-grey;
+            // margin-top: 40px;
+            padding-top: 30px;
+
+            a {
+                font-size: 13px;
+                letter-spacing: 0.4px;
+            }
 
             .buttons {
                 display: block;
