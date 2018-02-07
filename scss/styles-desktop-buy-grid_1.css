@@ -615,16 +615,38 @@ Scrollable Area
       .product-page__main-container .product-info .product-choices .product-size {
         display: inline-block;
         margin-top: 15px; }
+        .product-page__main-container .product-info .product-choices .product-size .radio-length .radio-border {
+          display: inline;
+          margin-right: 20px;
+          padding: 10px 15px;
+          font-size: 13px;
+          font-weight: 300;
+          border: 1px solid #CCCCCC;
+          border-radius: 22.5px; }
+          .product-page__main-container .product-info .product-choices .product-size .radio-length .radio-border .length {
+            display: none; }
+          .product-page__main-container .product-info .product-choices .product-size .radio-length .radio-border .label_radio {
+            height: 20px;
+            width: 20px;
+            border: 1px solid #000000;
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-bottom: -5px; }
+          .product-page__main-container .product-info .product-choices .product-size .radio-length .radio-border .swatch:checked + label {
+            border-color: #000;
+            border-radius: 50%; }
+          .product-page__main-container .product-info .product-choices .product-size .radio-length .radio-border label {
+            cursor: pointer; }
         .product-page__main-container .product-info .product-choices .product-size .label_size {
           border: 1px solid #3a3a39;
-          width: 42px;
-          height: 31px;
+          width: 60px;
+          height: 40px;
           text-align: center;
           font-weight: 300;
-          font-size: 11px;
-          padding-top: 7px;
+          font-size: 13px;
+          padding-top: 11px;
           transition: 100ms;
-          margin: 0 10px 20px 0; }
+          margin: -1px -7px 0 0; }
         .product-page__main-container .product-info .product-choices .product-size .size:checked + label, .product-page__main-container .product-info .product-choices .product-size .label_size:hover {
           background: #3a3a39;
           color: #ffffff;
