@@ -888,6 +888,19 @@ Scrollable Area
 .link {
   cursor: pointer; }
 
+#success {
+  position: fixed;
+  top: 57px;
+  right: 0;
+  display: none;
+  height: auto;
+  width: 500px;
+  transition: 200ms;
+  z-index: 9899; }
+  #success img {
+    width: 100%;
+    height: auto; }
+
 /* ==========================================================================
 Responsive Media Queries
 ========================================================================== */

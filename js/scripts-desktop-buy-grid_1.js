@@ -23,8 +23,8 @@ $(document).ready(function() {
                 return $(item).find('input[type="checkbox"]:checked').length >= 1;
             });
             if (valid >= 1) {
-              alert( 'Added to your bag!' );
               $(".test").addClass('hide');
+              $('#success').show("fast",0).delay(1750).hide(0);
             } else {
               $(".test").removeClass('hide');
             }

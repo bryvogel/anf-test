@@ -705,7 +705,6 @@ Scrollable Area
                 left: 17px;
                 width: 11px;
                 height: 11px;
-                // border: 1px solid $black;
                 border-radius: 50%;
                 transition: background-color .2s;
                 }
@@ -1025,7 +1024,23 @@ Scrollable Area
     cursor: pointer;
 }
 
+#success {
+    position: fixed;
+    top: 57px;
+    right: 0;
+    display: none;
+    height: auto;
+    width: 500px;
 
+    transition: 200ms;
+
+    z-index: 9899;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
 
 
 
