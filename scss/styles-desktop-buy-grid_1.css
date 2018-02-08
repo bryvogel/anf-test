@@ -718,16 +718,26 @@ Scrollable Area
           transition: 100ms; }
         .product-page__main-container .product-info .product-choices .product-size label {
           cursor: pointer; }
+        .product-page__main-container .product-info .product-choices .product-size .waist-size2 .label_size {
+          border: 1px solid #CCC;
+          width: 60px;
+          height: 40px;
+          text-align: center;
+          font-weight: 300;
+          font-size: 13px;
+          padding-top: 11px;
+          transition: 100ms;
+          margin: -1px -7px 0 0; }
+        .product-page__main-container .product-info .product-choices .product-size .waist-size2 .size:checked + label, .product-page__main-container .product-info .product-choices .product-size .waist-size2 .label_size:hover {
+          background: #3a3a39;
+          color: #ffffff;
+          transition: 100ms; }
+        .product-page__main-container .product-info .product-choices .product-size .waist-size2 label {
+          cursor: pointer; }
       .product-page__main-container .product-info .product-choices img {
         width: 120px;
         margin-left: -4px;
         margin-top: 15px; }
-    .product-page__main-container .product-info .fit h3 {
-      font-size: 15px;
-      color: #000000;
-      font-weight: 600;
-      margin: 18px 0;
-      padding: 0; }
     .product-page__main-container .product-info .atb {
       display: grid;
       border-top: 1px solid #dad9d0;

@@ -793,6 +793,32 @@ Scrollable Area
               label {
                 cursor: pointer;
               }
+
+
+              .waist-size2 {
+              .label_size {
+                border: 1px solid #CCC;
+                width: 60px;
+                height: 40px;
+                text-align: center;
+                font-weight: $light;
+                font-size: 13px;
+                padding-top: 11px;
+                transition: 100ms;
+                margin: -1px -7px 0 0;
+                }
+
+                .size:checked + label, .label_size:hover {
+                    background: $porcelain;
+                    color: $white;
+                    transition: 100ms;
+                }
+
+                label {
+                  cursor: pointer;
+                }
+              }
+
           }
 
           img {
@@ -805,16 +831,16 @@ Scrollable Area
 
         }
 
-        .fit {
-
-            h3 {
-                font-size: 15px;
-                color: $black;
-                font-weight: $bold;
-                margin: 18px 0;
-                padding: 0;
-            }
-        }
+        // .fit {
+        //
+        //     h3 {
+        //         font-size: 15px;
+        //         color: $black;
+        //         font-weight: $bold;
+        //         margin: 18px 0;
+        //         padding: 0;
+        //     }
+        // }
 
         .atb {
             display: grid;
