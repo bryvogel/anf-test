@@ -22,7 +22,12 @@ $(document).ready(function() {
             var valid = $('.main').toArray().every(function(item) {
                 return $(item).find('input[type="checkbox"]:checked').length >= 1;
             });
-            alert(valid)
+            if (valid >= 1) {
+              alert( 'Added to your cart' );
+            } else {
+              alert( 'Select size' );
+            }
+            // alert(valid)
         });
 
 
