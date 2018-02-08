@@ -501,7 +501,7 @@
 		</div>
 
 
-		<img src="img/anf_sizeguide.png">
+		<a class="link" onclick="on2()"><img src="img/anf_sizeguide.png"></a>
 	</div>
 
 	<div class="tab">
@@ -578,11 +578,15 @@
 		</section>
 
 
-
+		<div id="overlay2" onclick="off2()">
+			<div id="image2">
+				<img src="img/size-guide.png">
+			</div>
+		</div>
 
 	<div id="overlay" onclick="off()">
 		<div id="image">
-			<div id="modal-scroll"><img src="img/size-overlay.png"></div>
+			<img src="img/size-overlay.png">
 		</div>
 	</div>
 
@@ -600,6 +604,14 @@
 
 	function off() {
 	    document.getElementById("overlay").style.display = "none";
+	}
+
+	function on2() {
+			document.getElementById("overlay2").style.display = "block";
+	}
+
+	function off2() {
+			document.getElementById("overlay2").style.display = "none";
 	}
 	</script>
 
