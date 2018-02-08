@@ -12,7 +12,7 @@ $(document).ready(function() {
         $('input[type="checkbox"]').on('change', function() {
            $('input[type="checkbox"]').not(this).prop('checked', false);
         });
-
+        
 
         $('.swatch').click(function(){
         var radio_value = $(this).val();

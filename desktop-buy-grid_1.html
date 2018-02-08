@@ -503,7 +503,7 @@
 		<input id="tab-one" type="checkbox" name="tabs">
 		<label for="tab-one">Size & Fit Information</label>
 		<div class="tab-content">
-			<a><b>Most reviewers say:</b> <u>fits true to size.</u></a>
+			<a><b>Most reviewers say:</b> <a class="link" onclick="on()"><u>fits true to size.</u></a></a>
 			<br/>
 			<br/>
 			<a>Model is 5'9 wearing Size 25 Regular</a>
@@ -571,6 +571,11 @@
 
 
 
+	<div id="overlay" onclick="off()">
+		<div id="image">
+			<div id="modal-scroll"><img src="img/size-overlay.png"></div>
+		</div>
+	</div>
 
 
 	<!-- JS CDNs -->
@@ -578,6 +583,16 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
 
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<script>
+	function on() {
+	    document.getElementById("overlay").style.display = "block";
+	}
+
+	function off() {
+	    document.getElementById("overlay").style.display = "none";
+	}
+	</script>
 
 
 	<script src="js/scripts-desktop-buy-grid_1.js"></script>
