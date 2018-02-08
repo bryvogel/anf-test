@@ -769,7 +769,7 @@ Scrollable Area
         margin-top: 30px; }
   .product-page__main-container .tab {
     position: relative;
-    margin-bottom: 0;
+    margin-bottom: -3px;
     width: 100%;
     color: #000000;
     overflow: hidden;
@@ -807,7 +807,10 @@ Scrollable Area
       -o-transition: all .35s;
       transition: all .35s; }
     .product-page__main-container .tab #tab-one + label::after {
-      content: "+"; }
+      content: "+";
+      font-size: 25px;
+      margin-top: -15px;
+      margin-right: -30px; }
     .product-page__main-container .tab #tab-one:checked + label::after {
       transform: rotate(135deg); }
 
