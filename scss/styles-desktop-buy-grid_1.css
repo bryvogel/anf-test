@@ -735,10 +735,17 @@ Scrollable Area
           width: 48px;
           float: right;
           text-align: center; }
+          .product-page__main-container .product-info .atb .buttons .heart:hover {
+            background-color: #63605a;
+            transition: 200ms; }
+            .product-page__main-container .product-info .atb .buttons .heart:hover svg {
+              fill: #ffffff; }
           .product-page__main-container .product-info .atb .buttons .heart svg {
             width: 22px;
+            height: auto;
             padding-top: 12px;
-            fill: #63605a; }
+            fill: #63605a;
+            transition: 200ms; }
       .product-page__main-container .product-info .atb img {
         width: 360px;
         margin-top: 30px; }

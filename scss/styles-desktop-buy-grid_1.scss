@@ -816,10 +816,23 @@ Scrollable Area
                     float: right;
                     text-align: center;
 
+                    &:hover {
+                        background-color: $dark-teal;
+
+                        svg {
+                            fill: $white;
+                        }
+
+                        transition: 200ms;
+                    }
+
                     svg {
                         width: 22px;
+                        height: auto;
                         padding-top: 12px;
                         fill: $dark-teal;
+
+                        transition: 200ms;
                     }
                 }
             }
