@@ -786,9 +786,30 @@ Scrollable Area
     .product-page__main-container .tab #tab-one:checked + label::after {
       transform: rotate(135deg); }
 
+.has-grey {
+  background-color: #F6F6F6; }
+
 .content {
-  text-align: center; }
+  text-align: center;
+  display: block; }
+  .content .grey-1 {
+    height: 100%;
+    max-height: 611px;
+    width: auto;
+    background-color: #F6F6F6; }
+  .content .grey-2 {
+    height: 100%;
+    max-height: 1258px;
+    width: auto;
+    background-color: #F5F4F5; }
+  .content .grey-3 {
+    height: 100%;
+    max-height: 550px;
+    width: auto;
+    background-color: #F6F6F6;
+    margin-top: 73px; }
   .content img {
+    height: auto;
     width: 100%;
     max-width: 1200px; }
 

@@ -890,13 +890,41 @@ Scrollable Area
 
 }
 
+.has-grey {
+    background-color: #F6F6F6;
+}
+
 .content {
     text-align: center;
+    display: block;
+
+    .grey-1 {
+        height: 100%;
+        max-height: 611px;
+        width: auto;
+        background-color: #F6F6F6;
+    }
+    .grey-2 {
+        height: 100%;
+        max-height: 1258px;
+        width: auto;
+        background-color: #F5F4F5;
+    }
+    .grey-3 {
+        height: 100%;
+        max-height: 550px;
+        width: auto;
+        background-color: #F6F6F6;
+
+        margin-top: 73px;
+    }
 
     img {
+        height: auto;
         width: 100%;
         max-width: 1200px;
     }
+
 }
 
 #overlay {
