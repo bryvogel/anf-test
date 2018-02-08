@@ -786,8 +786,15 @@ Scrollable Area
     .product-page__main-container .tab #tab-one:checked + label::after {
       transform: rotate(135deg); }
 
-.has-grey {
-  background-color: #F6F6F6; }
+.test {
+  background-color: #D00000;
+  height: 40px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  transition: 200ms; }
 
 .content {
   text-align: center;

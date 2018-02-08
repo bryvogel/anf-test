@@ -23,11 +23,11 @@ $(document).ready(function() {
                 return $(item).find('input[type="checkbox"]:checked').length >= 1;
             });
             if (valid >= 1) {
-              alert( 'Added to your cart' );
+              alert( 'Added to your bag!' );
+              $(".test").addClass('hide');
             } else {
-              alert( 'Select size' );
+              $(".test").removeClass('hide');
             }
-            // alert(valid)
         });
 
 

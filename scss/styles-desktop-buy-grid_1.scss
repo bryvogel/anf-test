@@ -890,8 +890,16 @@ Scrollable Area
 
 }
 
-.has-grey {
-    background-color: #F6F6F6;
+.test {
+    background-color: #D00000;
+    height: 40px;
+    width: 100%;
+    color: $white;
+    font-size: 13px;
+    padding: 10px 20px;
+    margin-top: 30px;
+
+    transition: 200ms;
 }
 
 .content {
