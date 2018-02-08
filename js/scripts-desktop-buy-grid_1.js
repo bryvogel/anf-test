@@ -9,10 +9,14 @@ $(document).ready(function() {
             $('#' + id).removeClass('hide').siblings().addClass('hide');
         });
 
-        $('input[type="checkbox"]').on('change', function() {
-           $('input[type="checkbox"]').not(this).prop('checked', false);
+        $('.length').on('change', function() {
+           $('.length').not(this).prop('checked', false);
         });
-        
+
+        $('.size').on('change', function() {
+           $('.size').not(this).prop('checked', false);
+        });
+
 
         $('.swatch').click(function(){
         var radio_value = $(this).val();
@@ -98,6 +102,20 @@ $(document).ready(function() {
         }
         });
         $('[name="swatch"]:checked').trigger('click');
+
+
+
+        // $(function() {
+        //     $('input.required').click(function() {
+        //         var unchecked = $('input.required:not(:checked)').length;
+        //         if (unchecked == 0) {
+        //             $('#submitBtn').removeAttr('disabled');
+        //         }
+        //         else {
+        //             $('#submitBtn').attr('disabled', 'disabled');
+        //         }
+        //     });
+        // });
 
 
     /***************** Responsive Nav ******************/
