@@ -24,7 +24,7 @@ $(document).ready(function() {
             });
             if (valid >= 1) {
               $(".test").addClass('hide');
-              $('#success').show("fast",0).delay(1750).hide(0);
+              $('#success').show("fast",0).delay(1600).hide("fast",0);
             } else {
               $(".test").removeClass('hide');
             }

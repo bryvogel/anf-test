@@ -822,9 +822,29 @@ Scrollable Area
                     }
                 }
 
+
+                #save {
+                    display: none;
+
+                    &:checked + label {
+                      background-color: $dark-teal;
+
+                      svg {
+                          fill: $white;
+                      }
+
+                      transition: 200ms;
+                    }
+                }
+
+                .save {
+                  margin-left: 10px;
+                }
+
                 .heart {
                     border: 1px solid $dark-teal;
-                    margin-left: 10px;
+                    // margin-left: 10px;
+
                     height: 48px;
                     width: 48px;
                     float: right;
