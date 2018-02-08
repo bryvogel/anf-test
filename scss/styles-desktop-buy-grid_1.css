@@ -531,6 +531,7 @@ Scrollable Area
       line-height: 36px; }
   .product-page__main-container #thumb-container {
     width: calc(100% - 530px);
+    max-width: 725px;
     display: inline-block;
     margin: 0 26px 0 0;
     min-height: 550px; }
