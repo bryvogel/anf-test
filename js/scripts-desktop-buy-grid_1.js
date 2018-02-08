@@ -18,6 +18,14 @@ $(document).ready(function() {
         });
 
 
+        $('#submitBtn').on('click', function() {
+            var valid = $('.main').toArray().every(function(item) {
+                return $(item).find('input[type="checkbox"]:checked').length >= 1;
+            });
+            alert(valid)
+        });
+
+
         $('.swatch').click(function(){
         var radio_value = $(this).val();
         if(radio_value=='111') {
@@ -105,17 +113,19 @@ $(document).ready(function() {
 
 
 
-        // $(function() {
-        //     $('input.required').click(function() {
-        //         var unchecked = $('input.required:not(:checked)').length;
-        //         if (unchecked == 0) {
-        //             $('#submitBtn').removeAttr('disabled');
-        //         }
-        //         else {
-        //             $('#submitBtn').attr('disabled', 'disabled');
-        //         }
-        //     });
-        // });
+
+        $(".scroll").click(function(event){
+                event.preventDefault();
+                //calculate destination place
+                var dest=0;
+                if($(this.hash).offset().top > $(document).height()-$(window).height()){
+                     dest=$(document).height()-$(window).height();
+                }else{
+                     dest=$(this.hash).offset().top;
+                }
+                //go to destination
+                $('html,body').animate({scrollTop:dest}, 1000,'swing');
+            });
 
 
     /***************** Responsive Nav ******************/
