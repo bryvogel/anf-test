@@ -579,7 +579,8 @@ Scrollable Area
       padding-bottom: 20px; }
       .product-page__main-container .product-info .product-header img {
         width: 130px;
-        margin-top: 10px; }
+        margin-top: 10px;
+        padding-bottom: 10px; }
       .product-page__main-container .product-info .product-header .price {
         margin-top: 10px;
         font-size: 13px; }
@@ -635,7 +636,7 @@ Scrollable Area
           margin-left: 5px; }
       .product-page__main-container .product-info .product-choices .product-size {
         display: inline-block;
-        margin-top: 25px; }
+        margin-top: 15px; }
         .product-page__main-container .product-info .product-choices .product-size .radio-length .radio-size {
           display: inline;
           margin-right: 15px; }
@@ -680,29 +681,38 @@ Scrollable Area
           background-color: #ffffff; }
         .product-page__main-container .product-info .product-choices .product-size .radio-length input:checked + label::before {
           background-color: #000000; }
-        .product-page__main-container .product-info .product-choices .product-size .radio-length2 .radio-size {
-          display: inline;
-          margin-right: 9px;
-          text-align: center; }
-        .product-page__main-container .product-info .product-choices .product-size .radio-length2 .length {
-          display: none; }
-        .product-page__main-container .product-info .product-choices .product-size .radio-length2 .label_radio {
-          padding: 10px 10px 15px 10px;
-          height: 40px;
-          width: 110px;
-          text-align: center;
-          border: 1px solid #CCC;
-          border-radius: 100px;
-          font-size: 13px;
-          font-weight: 300;
-          background-color: #ffffff;
-          cursor: pointer;
-          user-select: none;
-          transition: background-color .2s; }
-        .product-page__main-container .product-info .product-choices .product-size .radio-length2 .length:checked + label, .product-page__main-container .product-info .product-choices .product-size .radio-length2 .label_radio:hover {
-          background: #3a3a39;
-          color: #ffffff;
-          transition: 100ms; }
+        .product-page__main-container .product-info .product-choices .product-size .radio-length2 {
+          margin-top: 10px; }
+          .product-page__main-container .product-info .product-choices .product-size .radio-length2 h5 {
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-family: 'Trade Gothic CnBold';
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: capitalize; }
+          .product-page__main-container .product-info .product-choices .product-size .radio-length2 .radio-size {
+            display: inline;
+            margin-right: 9px;
+            text-align: center; }
+          .product-page__main-container .product-info .product-choices .product-size .radio-length2 .length {
+            display: none; }
+          .product-page__main-container .product-info .product-choices .product-size .radio-length2 .label_radio {
+            padding: 10px 10px 15px 10px;
+            height: 40px;
+            width: 110px;
+            text-align: center;
+            border: 1px solid #CCC;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 300;
+            background-color: #ffffff;
+            cursor: pointer;
+            user-select: none;
+            transition: background-color .2s; }
+          .product-page__main-container .product-info .product-choices .product-size .radio-length2 .length:checked + label, .product-page__main-container .product-info .product-choices .product-size .radio-length2 .label_radio:hover {
+            background: #3a3a39;
+            color: #ffffff;
+            transition: 100ms; }
         .product-page__main-container .product-info .product-choices .product-size .label_size {
           border: 1px solid #3a3a39;
           width: 60px;
@@ -719,6 +729,13 @@ Scrollable Area
           transition: 100ms; }
         .product-page__main-container .product-info .product-choices .product-size label {
           cursor: pointer; }
+        .product-page__main-container .product-info .product-choices .product-size .waist-size2 h5 {
+          margin-bottom: 20px;
+          font-weight: 400;
+          font-family: 'Trade Gothic CnBold';
+          font-size: 13px;
+          letter-spacing: 1px;
+          text-transform: capitalize; }
         .product-page__main-container .product-info .product-choices .product-size .waist-size2 .label_size {
           border: 1px solid #CCC;
           width: 60px;
@@ -738,7 +755,7 @@ Scrollable Area
       .product-page__main-container .product-info .product-choices img {
         width: 120px;
         margin-left: -4px;
-        margin-top: 15px; }
+        margin-top: 25px; }
     .product-page__main-container .product-info .atb {
       display: grid;
       border-top: 1px solid #dad9d0;

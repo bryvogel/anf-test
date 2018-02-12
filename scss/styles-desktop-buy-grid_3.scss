@@ -573,6 +573,7 @@ Scrollable Area
         img {
             width: 130px;
             margin-top: 10px;
+            padding-bottom: 10px;
         }
 
         .price {
@@ -669,7 +670,7 @@ Scrollable Area
 
         .product-size {
             display: inline-block;
-            margin-top: 25px;
+            margin-top: 15px;
 
             .radio-length {
 
@@ -734,6 +735,17 @@ Scrollable Area
             }
 
             .radio-length2 {
+                margin-top: 10px;
+
+                h5 {
+                    margin-bottom: 20px;
+                    font-weight: $normal;
+                    font-family: 'Trade Gothic CnBold';
+                    font-size: 13px;
+                    letter-spacing: 1px;
+
+                    text-transform: capitalize;
+                }
 
                 .radio-size {
                     display: inline;
@@ -797,6 +809,17 @@ Scrollable Area
 
 
               .waist-size2 {
+
+                h5 {
+                    margin-bottom: 20px;
+                    font-weight: $normal;
+                    font-family: 'Trade Gothic CnBold';
+                    font-size: 13px;
+                    letter-spacing: 1px;
+
+                    text-transform: capitalize;
+                }
+
               .label_size {
                 border: 1px solid #CCC;
                 width: 60px;
@@ -825,7 +848,7 @@ Scrollable Area
           img {
               width: 120px;
               margin-left: -4px;
-              margin-top:15px;
+              margin-top:25px;
           }
 
 
