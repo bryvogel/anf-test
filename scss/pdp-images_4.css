@@ -516,8 +516,8 @@ Scrollable Area
       color: #777; }
 
 .product-page__main-container {
-  margin: 44px 8% 0;
-  width: 92%;
+  margin: 44px 5% 0;
+  width: 96%;
   display: block; }
   .product-page__main-container .header {
     margin: 0 0 5px; }
@@ -529,31 +529,26 @@ Scrollable Area
       margin: 0;
       line-height: 36px; }
   .product-page__main-container #thumb-container {
-    width: calc(100% - 530px);
-    max-width: 725px;
+    width: calc(100% - 330px);
+    max-width: 800px;
     display: inline-block;
     margin: 0 26px 0 0;
     min-height: 550px; }
-  .product-page__main-container .product-images .product-thumbs {
-    width: 80px;
-    margin-right: 10px;
-    float: left; }
   .product-page__main-container .product-images .product-display {
-    width: calc(100% - 98px);
-    display: inline-block;
-    position: relative; }
+    width: calc(100% - 0px); }
     .product-page__main-container .product-images .product-display .product-large {
       width: 100%;
-      overflow: hidden;
-      position: relative;
-      min-height: 320px; }
+      min-height: 320px;
+      display: block; }
       .product-page__main-container .product-images .product-display .product-large .hide {
         display: none;
         transition: 300ms; }
       .product-page__main-container .product-images .product-display .product-large img {
-        max-width: 620px;
+        max-width: 380px;
         width: 100%;
-        margin-bottom: 8px; }
+        height: 100%;
+        margin-bottom: 15px;
+        margin-right: 10px; }
   .product-page__main-container .product-info {
     width: 360px;
     padding-bottom: 35px;
@@ -959,8 +954,8 @@ Responsive Media Queries
 ========================================================================== */
 @media screen and (min-width: 1336px) {
   .product-page__main-container {
-    margin: 44px 15% 0;
-    width: 78%; } }
+    margin: 44px 6% 0;
+    width: 90%; } }
 @media screen and (max-width: 1024px) {
   .product-page__main-container {
     margin: 44px 4% 0;
@@ -1010,4 +1005,4 @@ Responsive Media Queries
     position: relative;
     width: 90%; } }
 
-/*# sourceMappingURL=pdp-images_3.css.map */
+/*# sourceMappingURL=pdp-images_4.css.map */
