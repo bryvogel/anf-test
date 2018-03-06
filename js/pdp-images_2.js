@@ -18,7 +18,7 @@ $(document).ready(function() {
           controls: false,
           touchEnabled: true,
           pagerCustom: '#bx-default-pager',
-          // mode: 'vertical',
+          mode: 'vertical',
           onSliderLoad: function() {
           }
       });
