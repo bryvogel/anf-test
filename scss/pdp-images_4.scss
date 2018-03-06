@@ -503,8 +503,9 @@ Scrollable Area
                 width: 100%;
                 min-height: 320px;
 
-                display: block;
-
+                div {
+                    display: inline-block;
+                }
 
                 .hide {
                     display: none;

@@ -538,8 +538,9 @@ Scrollable Area
     width: calc(100% - 0px); }
     .product-page__main-container .product-images .product-display .product-large {
       width: 100%;
-      min-height: 320px;
-      display: block; }
+      min-height: 320px; }
+      .product-page__main-container .product-images .product-display .product-large div {
+        display: inline-block; }
       .product-page__main-container .product-images .product-display .product-large .hide {
         display: none;
         transition: 300ms; }

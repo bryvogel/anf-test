@@ -98,6 +98,10 @@ $(document).ready(function() {
         $('[name="swatch"]:checked').trigger('click');
 
 
+        $('.zoom').jzoom({
+          suffixName:"_big",
+          width: 200,
+        });
 
 
         $(".scroll").click(function(event){
