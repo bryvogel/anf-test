@@ -531,9 +531,10 @@ Scrollable Area
     width: calc(100% - 430px);
     max-width: 800px;
     display: inline-block;
-    margin: 0 10px 0 0;
-    min-height: 550px;
-    overflow: scroll; }
+    margin: 0 10px 25px 0;
+    height: 980px;
+    overflow: hidden;
+    overflow-y: scroll; }
   .product-page__main-container .product-images {
     display: block; }
     .product-page__main-container .product-images .hide {
@@ -972,4 +973,4 @@ Responsive Media Queries
     position: relative;
     width: 90%; } }
 
-/*# sourceMappingURL=pdp-images_4.css.map */
+/*# sourceMappingURL=pdp-images_5.css.map */
