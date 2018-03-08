@@ -534,6 +534,10 @@ Scrollable Area
     margin: 0 10px 0 0;
     min-height: 550px;
     overflow: scroll; }
+  .product-page__main-container ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */ }
   .product-page__main-container .product-images {
     display: block; }
     .product-page__main-container .product-images .hide {

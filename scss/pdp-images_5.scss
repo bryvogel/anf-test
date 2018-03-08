@@ -489,11 +489,14 @@ Scrollable Area
       margin: 0 10px 25px 0;
       // padding-bottom: 25px;
       height: 980px;
-      overflow: hidden;
-      overflow-y: scroll;
+      // overflow: hidden;
+      overflow-y: auto;
     }
 
-
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; /* make scrollbar transparent */
+    }
 
     .product-images {
       display: block;
@@ -526,7 +529,7 @@ Scrollable Area
         vertical-align: top;
         display: inline-block;
         position: relative;
-        overflow: scroll;
+        // overflow: scroll;
 
     .product-header {
         border-bottom: 1px solid $dark-grey;
