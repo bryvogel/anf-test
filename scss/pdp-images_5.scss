@@ -460,10 +460,13 @@ Scrollable Area
 }
 
 
+#center {
+    margin: 0 10%;
+}
 
 
 .product-page__main-container {
-    margin: 44px 5% 0;
+    margin: 44px auto 0;
     width: 96%;
     display: block;
 
@@ -1073,32 +1076,32 @@ Responsive Media Queries
 ========================================================================== */
 @media screen and (min-width:1336px){
 
-    .product-page__main-container {
-        margin: 44px 6% 0;
-        width: 90%;
-    }
+    // .product-page__main-container {
+    //     margin: 44px 6% 0;
+    //     width: 90%;
+    // }
 
 
 
 
 }
 @media screen and (max-width:1024px) {
-  .product-page__main-container {
-      margin: 44px 4% 0;
-      width: 96%;
-
-      .product-images {
-        display: inline;
-
-        img {
-          max-width: 100%;
-          width: 100%;
-          height: auto;
-          margin-bottom: 15px;
-          padding-right: 25px;
-        }
-      }
-  }
+  // .product-page__main-container {
+  //     margin: 44px 4% 0;
+  //     width: 96%;
+  //
+  //     .product-images {
+  //       display: inline;
+  //
+  //       img {
+  //         max-width: 100%;
+  //         width: 100%;
+  //         height: auto;
+  //         margin-bottom: 15px;
+  //         padding-right: 25px;
+  //       }
+  //     }
+  // }
 
 
     .primary-nav-wrapper {
@@ -1141,26 +1144,26 @@ Responsive Media Queries
     }
 }
 @media screen and (max-width:768px) {
-  .product-page__main-container {
-      margin: 44px auto 0;
-  }
+  // .product-page__main-container {
+  //     margin: 44px auto 0;
+  // }
 
 }
 @media screen and (max-width:540px) {
 
 
 
-    .product-page__main-container {
-        margin: 0;
-        width: 100%;
-        display: block;
-    }
-
-        .product-info {
-            margin: 0 5%;
-            position: relative;
-            width: 90%;
-        }
+//     .product-page__main-container {
+//         margin: 0;
+//         width: 100%;
+//         display: block;
+//     }
+//
+//         .product-info {
+//             margin: 0 5%;
+//             position: relative;
+//             width: 90%;
+//         }
 }
 @media screen and (min-width:540px) {
 

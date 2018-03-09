@@ -514,8 +514,11 @@ Scrollable Area
       font-weight: 300;
       color: #777; }
 
+#center {
+  margin: 0 10%; }
+
 .product-page__main-container {
-  margin: 44px 5% 0;
+  margin: 44px auto 0;
   width: 96%;
   display: block; }
   .product-page__main-container .header {
@@ -915,23 +918,7 @@ Scrollable Area
 /* ==========================================================================
 Responsive Media Queries
 ========================================================================== */
-@media screen and (min-width: 1336px) {
-  .product-page__main-container {
-    margin: 44px 6% 0;
-    width: 90%; } }
 @media screen and (max-width: 1024px) {
-  .product-page__main-container {
-    margin: 44px 4% 0;
-    width: 96%; }
-    .product-page__main-container .product-images {
-      display: inline; }
-      .product-page__main-container .product-images img {
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        margin-bottom: 15px;
-        padding-right: 25px; }
-
   .primary-nav-wrapper {
     position: fixed;
     z-index: 99;
@@ -962,9 +949,6 @@ Responsive Media Queries
 
   #scroll {
     margin-top: 46px; } }
-@media screen and (max-width: 768px) {
-  .product-page__main-container {
-    margin: 44px auto 0; } }
 @media screen and (max-width: 540px) {
   .product-page__main-container {
     margin: 0;
