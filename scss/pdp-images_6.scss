@@ -460,15 +460,17 @@ Scrollable Area
 }
 
 
-#center {
-    margin: 0 10%;
-}
+// #center {
+//     margin: 0 10%;
+// }
 
 
 .product-page__main-container {
     margin: 44px auto 0;
     max-width: 1000px;
     display: block;
+    height: inherit;
+
 
     .header {
         margin: 0 0 5px;
@@ -526,9 +528,8 @@ Scrollable Area
         width: 335px;
         padding-bottom: 35px;
         vertical-align: top;
-        display: inline-block;
+        display: block;
         position: relative;
-        float: right;
 
     .product-header {
         border-bottom: 1px solid $dark-grey;
@@ -854,6 +855,7 @@ Scrollable Area
                     outline: 0;
                     text-decoration: none;
                     width: calc(100% - 60px);
+                    max-width: 275px;
                     position: relative;
                     float: left;
 
@@ -919,7 +921,7 @@ Scrollable Area
             }
 
             img {
-                width: 360px;
+                width: 335px;
                 margin-top: 30px;
             }
 
@@ -971,6 +973,7 @@ Scrollable Area
         height: auto;
         width: 100%;
         max-width: 1200px;
+        position: relative;
     }
 
 }

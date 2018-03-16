@@ -1,14 +1,14 @@
 $(document).ready(function() {
 
 
-    /***************** Image Change ******************/
+    /***************** Swatch Change ******************/
 
         $(function() {
           $('#a').siblings().addClass('hide');
 
         });
 
-
+        
         $(':radio').change(function (event) {
             var id = $(this).data('id');
             $('#' + id).removeClass('hide').siblings().addClass('hide');
@@ -19,6 +19,10 @@ $(document).ready(function() {
             var id = $(this).data('id');
             $('#' + id).removeClass('hide').siblings().addClass('hide');
         });
+
+
+        /***************** Bag Validation ******************/
+
 
         $('.length').on('change', function() {
            $('.length').not(this).prop('checked', false);

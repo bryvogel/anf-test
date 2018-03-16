@@ -514,13 +514,11 @@ Scrollable Area
       font-weight: 300;
       color: #777; }
 
-#center {
-  margin: 0 10%; }
-
 .product-page__main-container {
   margin: 44px auto 0;
   max-width: 1000px;
-  display: block; }
+  display: block;
+  height: inherit; }
   .product-page__main-container .header {
     margin: 0 0 5px; }
     .product-page__main-container .header a {
@@ -554,9 +552,8 @@ Scrollable Area
     width: 335px;
     padding-bottom: 35px;
     vertical-align: top;
-    display: inline-block;
-    position: relative;
-    float: right; }
+    display: block;
+    position: relative; }
     .product-page__main-container .product-info .product-header {
       border-bottom: 1px solid #dad9d0;
       margin-bottom: 25px;
@@ -767,6 +764,7 @@ Scrollable Area
           outline: 0;
           text-decoration: none;
           width: calc(100% - 60px);
+          max-width: 275px;
           position: relative;
           float: left; }
           .product-page__main-container .product-info .atb .buttons button:hover, .product-page__main-container .product-info .atb .buttons button:focus {
@@ -805,7 +803,7 @@ Scrollable Area
             fill: #63605a;
             transition: 200ms; }
       .product-page__main-container .product-info .atb img {
-        width: 360px;
+        width: 335px;
         margin-top: 30px; }
 
 .test {
@@ -840,7 +838,8 @@ Scrollable Area
   .content img {
     height: auto;
     width: 100%;
-    max-width: 1200px; }
+    max-width: 1200px;
+    position: relative; }
 
 .product-info.stick {
   position: fixed;
