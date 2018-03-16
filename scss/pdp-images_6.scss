@@ -460,15 +460,11 @@ Scrollable Area
 }
 
 
-// #center {
-//     margin: 0 10%;
-// }
-
 
 .product-page__main-container {
     margin: 44px auto 0;
     max-width: 1000px;
-    display: block;
+    display: flex;
     height: inherit;
 
 
@@ -494,29 +490,23 @@ Scrollable Area
       margin: 0 10px 25px 0;
     }
 
-    ::-webkit-scrollbar {
-        width: 0px;
-        background: transparent; /* make scrollbar transparent */
-    }
 
     .product-images {
-      display: block;
+        display: block;
 
+        .hide {
+            display: none;
+            transition: 300ms;
+        }
 
-                .hide {
-                    display: none;
-                    transition: 300ms;
-                }
-
-                img {
-                  max-width: 380px;
-                  width: 46%;
-                  height: auto;
-                  margin-bottom: 15px;
-                  margin-right: 10px;
-                }
+        img {
+            max-width: 380px;
+            width: 46%;
+            height: auto;
+            margin-bottom: 15px;
+            margin-right: 10px;
+        }
     }
-
 
     .product-info {
         width: 335px;
@@ -549,6 +539,7 @@ Scrollable Area
             .cost {
                text-decoration: line-through;
             }
+
             .sale {
                 font-weight: $normal;
                 font-family: 'Trade Gothic Bold';
@@ -563,7 +554,6 @@ Scrollable Area
                 padding-bottom: 0;
                 letter-spacing: 0.4px;
             }
-
         }
     }
 
@@ -595,16 +585,14 @@ Scrollable Area
                 border-radius: 50%;
             }
 
-
-
             img {
-              width: 39px;
-              height: 39px;
-              border-radius: 50%;
-              overflow: hidden;
-              margin: 2px;
+                width: 39px;
+                height: 39px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 2px;
             }
-          }
+        }
 
 
         .swatch:checked + label {
@@ -612,11 +600,11 @@ Scrollable Area
             border-radius: 50%;
         }
 
-          label {
+        label {
             cursor: pointer;
-          }
+        }
 
-          .disabled {
+        .disabled {
             width: 52px;
             height: 47px;
             border-bottom: 2px solid $white;
@@ -628,11 +616,7 @@ Scrollable Area
             margin-top: -39px;
             margin-left: 5px;
         }
-
-
-
-
-      }
+    }
 
         .product-size {
             display: inline-block;
@@ -646,58 +630,57 @@ Scrollable Area
                 }
 
                 .length {
-                display: none;
+                    display: none;
                 }
 
                 .label_radio {
-                display: inline-flex;
-                position: relative;
-                padding: 10px 18px 15px 10px;
-                height: 40px;
-                width: 56px;
-                border: 1px solid $porcelain;
-                border-radius: 100px;
-                font-size: 12px;
-                font-weight: $light;
-                background-color: $white;
-                cursor: pointer;
-                user-select: none;
-                transition: background-color .2s;
+                    display: inline-flex;
+                    position: relative;
+                    padding: 10px 18px 15px 10px;
+                    height: 40px;
+                    width: 56px;
+                    border: 1px solid $porcelain;
+                    border-radius: 100px;
+                    font-size: 12px;
+                    font-weight: $light;
+                    background-color: $white;
+                    cursor: pointer;
+                    user-select: none;
+                    transition: background-color .2s;
                 }
 
                 .label_radio::before {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 13px;
-                bottom: 7px;
-                left: 17px;
-                width: 11px;
-                height: 11px;
-                border-radius: 50%;
-                transition: background-color .2s;
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 13px;
+                    bottom: 7px;
+                    left: 17px;
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 50%;
+                    transition: background-color .2s;
                 }
 
                 .radio-border {
-                  display: block;
-                  // position: absolute;
-                  margin-top: -4px;
-                  margin-bottom: 7px;
-                  margin-left: 0px;
-                  margin-right: 9px;
-                  width: 25px;
-                  height: 25px;
-                  border: 1px solid $black;
-                  border-radius: 50%;
-                  transition: background-color .2s;
+                    display: block;
+                    margin-top: -4px;
+                    margin-bottom: 7px;
+                    margin-left: 0px;
+                    margin-right: 9px;
+                    width: 25px;
+                    height: 25px;
+                    border: 1px solid $black;
+                    border-radius: 50%;
+                    transition: background-color .2s;
                 }
 
                 input:checked + label {
-                background-color: $white;
+                    background-color: $white;
                 }
 
                 input:checked + label::before {
-                background-color: $black;
+                    background-color: $black;
                 }
             }
 
@@ -705,13 +688,12 @@ Scrollable Area
                 margin-top: 10px;
 
                 h5 {
-                  margin-bottom: 20px;
-                  font-weight: $light;
-                  font-family: 'Trade Gothic Bold';
-                  font-size: 12px;
-                  letter-spacing: 1px;
-
-                  text-transform: capitalize;
+                    margin-bottom: 20px;
+                    font-weight: $light;
+                    font-family: 'Trade Gothic Bold';
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    text-transform: capitalize;
                 }
 
                 .radio-size {
@@ -721,28 +703,23 @@ Scrollable Area
                 }
 
                 .length {
-                display: none;
+                    display: none;
                 }
 
                 .label_radio {
-                // display: inline-flex;
-                // position: relative;
-                padding: 10px 10px 15px 10px;
-                height: 40px;
-                width: 100px;
-                text-align: center;
-                border: 1px solid $porcelain;
-                border-radius: 100px;
-                font-size: 12px;
-                font-weight: $light;
-                background-color: $white;
-                cursor: pointer;
-                user-select: none;
-                transition: background-color .2s;
+                    padding: 10px 10px 15px 10px;
+                    height: 40px;
+                    width: 100px;
+                    text-align: center;
+                    border: 1px solid $porcelain;
+                    border-radius: 100px;
+                    font-size: 12px;
+                    font-weight: $light;
+                    background-color: $white;
+                    cursor: pointer;
+                    user-select: none;
+                    transition: background-color .2s;
                 }
-
-
-
 
                 .length:checked + label, .label_radio:hover {
                     background: $porcelain;
@@ -753,41 +730,6 @@ Scrollable Area
 
 
             .label_size {
-              border: 1px solid $porcelain;
-              width: 56px;
-              height: 40px;
-              text-align: center;
-              font-weight: $light;
-              font-size: 12px;
-              padding-top: 11px;
-              transition: 100ms;
-              margin: -1px -7px 0 0;
-              }
-
-              .size:checked + label, .label_size:hover {
-                  background: $porcelain;
-                  color: $white;
-                  transition: 100ms;
-              }
-
-              label {
-                cursor: pointer;
-              }
-
-
-              .waist-size2 {
-
-                h5 {
-                    margin-bottom: 20px;
-                    font-weight: $light;
-                    font-family: 'Trade Gothic Bold';
-                    font-size: 12px;
-                    letter-spacing: 1px;
-
-                    text-transform: capitalize;
-                }
-
-              .label_size {
                 border: 1px solid $porcelain;
                 width: 56px;
                 height: 40px;
@@ -797,6 +739,40 @@ Scrollable Area
                 padding-top: 11px;
                 transition: 100ms;
                 margin: -1px -7px 0 0;
+            }
+
+            .size:checked + label, .label_size:hover {
+                background: $porcelain;
+                color: $white;
+                transition: 100ms;
+            }
+
+            label {
+                cursor: pointer;
+            }
+
+
+            .waist-size2 {
+
+                h5 {
+                    margin-bottom: 20px;
+                    font-weight: $light;
+                    font-family: 'Trade Gothic Bold';
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    text-transform: capitalize;
+                }
+
+                .label_size {
+                    border: 1px solid $porcelain;
+                    width: 56px;
+                    height: 40px;
+                    text-align: center;
+                    font-weight: $light;
+                    font-size: 12px;
+                    padding-top: 11px;
+                    transition: 100ms;
+                    margin: -1px -7px 0 0;
                 }
 
                 .size:checked + label, .label_size:hover {
@@ -806,21 +782,17 @@ Scrollable Area
                 }
 
                 label {
-                  cursor: pointer;
+                    cursor: pointer;
                 }
-              }
-
-          }
-
-          img {
-              width: 120px;
-              margin-left: -4px;
-              margin-top:25px;
-          }
-
-
-
+            }
         }
+
+        img {
+            width: 120px;
+            margin-left: -4px;
+            margin-top:25px;
+        }
+    }
 
         .atb {
             display: grid;
@@ -1062,7 +1034,12 @@ Scrollable Area
     }
 }
 
-
+/* ==========================================================================
+Hide Trial Note
+========================================================================== */
+.cloudzoom-lens + div {
+  display: none !important;
+}
 
 
 /* ==========================================================================

@@ -517,7 +517,7 @@ Scrollable Area
 .product-page__main-container {
   margin: 44px auto 0;
   max-width: 1000px;
-  display: block;
+  display: flex;
   height: inherit; }
   .product-page__main-container .header {
     margin: 0 0 5px; }
@@ -533,10 +533,6 @@ Scrollable Area
     max-width: 800px;
     display: inline-block;
     margin: 0 10px 25px 0; }
-  .product-page__main-container ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-    /* make scrollbar transparent */ }
   .product-page__main-container .product-images {
     display: block; }
     .product-page__main-container .product-images .hide {
@@ -912,6 +908,12 @@ Scrollable Area
   #success img {
     width: 100%;
     height: auto; }
+
+/* ==========================================================================
+Hide Trial Note
+========================================================================== */
+.cloudzoom-lens + div {
+  display: none !important; }
 
 /* ==========================================================================
 Responsive Media Queries

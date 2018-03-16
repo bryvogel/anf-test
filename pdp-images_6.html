@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/cloudzoom.css" />
 	<link rel="stylesheet" href="scss/pdp-images_6.css">
 
   <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/redmond/jquery-ui.css">
@@ -85,15 +86,20 @@
 			<section class="product-images" id="a">
 
 
+				<img class = "cloudzoom" src="img/product/11.jpeg"
+		data-cloudzoom = "zoomImage: 'img/product/11.jpeg'">
 
-								 <img src="img/product/11.jpeg">
-								 <img src="img/product/12.jpeg">
+			 <img class = "cloudzoom" src="img/product/12.jpeg"
+   data-cloudzoom = "zoomImage: 'img/product/12.jpeg'">
 
-								 <img src="img/product/13.jpeg">
+			 <img class = "cloudzoom" src="img/product/13.jpeg"
+   data-cloudzoom = "zoomImage: 'img/product/13.jpeg'">
 
-								 <img src="img/product/14.jpeg">
+			 <img class = "cloudzoom" src="img/product/14.jpeg"
+   data-cloudzoom = "zoomImage: 'img/product/14.jpeg'">
 
-								 <img src="img/product/15.jpeg">
+			 <img class = "cloudzoom" src="img/product/15.jpeg"
+   data-cloudzoom = "zoomImage: 'img/product/15.jpeg'">
 
 
 			</section>
@@ -406,7 +412,10 @@
 	<!-- JS CDNs -->
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
-
+	<script type="text/javascript" src="js/cloudzoom.js"></script>
+<script type="text/javascript">
+		CloudZoom.quickStart();
+</script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 

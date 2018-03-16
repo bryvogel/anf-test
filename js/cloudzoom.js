@@ -1,14 +1,4 @@
-/*
-    Cloud Zoom 1 Site License (CZ01-01) TRIAL VERSION.
-    Version 3.1 rev 1507231015
-    Please purchase an appropriate license to use this software.
-    License Agreement: www.starplugins.com/license
-    Copyright (c)2012-2015 Star Plugins - www.starplugins.com
-    
-    Downloaded on Mar 16, 2018 by account #TRIAL USER
-    License Key: N/A
-    Licensed website(s): starplugins.com
-*/
+
 (new window['\x46\x75\x6E\x63\x74\x69\x6F\x6E'](['r.CloudZoom=d;d.Oa()})(jQuery);;',
 's.prototype.da=function(){var a=this;a.b.bind(\"touchstart\",function(){return!1});var b=this.zoom.a.offset();this.zoom.options.zoomFlyOut?this.b.animate({left:b.left+this.zoom.d/2,top:b.top+this.zoom.c/2,opacity:0,width:1,height:1},{duration:this.zoom.options.animationTime,step:function(){d.browser.webkit&&a.b.width(a.b.width())},complete:function(){a.b.remove()}}):this.b.animate({opacity:0},{duration:this.zoom.options.animationTime,complete:function(){a.b.remove()}})};',
 'this.B+=(d-this.B)/a.options.easing;c=-this.q*b;c+=a.n/2*b;var d=-this.B*b,d=d+a.j/2*b,e=a.a.width()*b,a=a.a.height()*b;0<c&&(c=0);0<d&&(d=0);c+e<this.b.width()&&(c+=this.b.width()-(c+e));d+a<this.b.height()-this.s&&(d+=this.b.height()-this.s-(d+a));this.A.css({left:c+\"px\",top:d+this.Ea+\"px\",width:e})};',
