@@ -519,7 +519,7 @@ Scrollable Area
 
 .product-page__main-container {
   margin: 44px auto 0;
-  width: 96%;
+  max-width: 1000px;
   display: block; }
   .product-page__main-container .header {
     margin: 0 0 5px; }
@@ -531,12 +531,10 @@ Scrollable Area
       margin: 0;
       line-height: 36px; }
   .product-page__main-container #thumb-container {
-    width: calc(100% - 430px);
+    width: calc(100% - 345px);
     max-width: 800px;
     display: inline-block;
-    margin: 0 10px 25px 0;
-    height: 980px;
-    overflow-y: auto; }
+    margin: 0 10px 25px 0; }
   .product-page__main-container ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
@@ -553,11 +551,12 @@ Scrollable Area
       margin-bottom: 15px;
       margin-right: 10px; }
   .product-page__main-container .product-info {
-    width: 360px;
+    width: 335px;
     padding-bottom: 35px;
     vertical-align: top;
     display: inline-block;
-    position: relative; }
+    position: relative;
+    float: right; }
     .product-page__main-container .product-info .product-header {
       border-bottom: 1px solid #dad9d0;
       margin-bottom: 25px;
@@ -598,15 +597,15 @@ Scrollable Area
         .product-page__main-container .product-info .product-choices .product-swatches .label_swatch {
           border: 2px solid transparent;
           border-radius: 50%;
-          margin: 0 7.1px 12px 0px;
+          margin: 0 3.5px 12px 0px;
           transition: 100ms;
           z-index: 5; }
           .product-page__main-container .product-info .product-choices .product-swatches .label_swatch:hover, .product-page__main-container .product-info .product-choices .product-swatches .label_swatch:focus {
             border-color: #a9a7a3;
             border-radius: 50%; }
           .product-page__main-container .product-info .product-choices .product-swatches .label_swatch img {
-            width: 40px;
-            height: 40px;
+            width: 39px;
+            height: 39px;
             border-radius: 50%;
             overflow: hidden;
             margin: 2px; }
@@ -636,6 +635,7 @@ Scrollable Area
           position: relative;
           padding: 10px 18px 15px 10px;
           height: 40px;
+          width: 56px;
           border: 1px solid #3a3a39;
           border-radius: 100px;
           font-size: 12px;
@@ -688,7 +688,7 @@ Scrollable Area
           .product-page__main-container .product-info .product-choices .product-size .radio-length2 .label_radio {
             padding: 10px 10px 15px 10px;
             height: 40px;
-            width: 110px;
+            width: 100px;
             text-align: center;
             border: 1px solid #3a3a39;
             border-radius: 100px;
@@ -704,7 +704,7 @@ Scrollable Area
             transition: 100ms; }
         .product-page__main-container .product-info .product-choices .product-size .label_size {
           border: 1px solid #3a3a39;
-          width: 60px;
+          width: 56px;
           height: 40px;
           text-align: center;
           font-weight: 300;
@@ -727,7 +727,7 @@ Scrollable Area
           text-transform: capitalize; }
         .product-page__main-container .product-info .product-choices .product-size .waist-size2 .label_size {
           border: 1px solid #3a3a39;
-          width: 60px;
+          width: 56px;
           height: 40px;
           text-align: center;
           font-weight: 300;
