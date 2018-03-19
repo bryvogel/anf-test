@@ -145,8 +145,9 @@ $(document).ready(function() {
     m.attach({
         thumb: '.cloudzoom',
         largeWrapper: 'preview',
-        zoomable: true
+        zoomable: false
 
     });
+
 
   });
