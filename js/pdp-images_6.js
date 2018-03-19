@@ -142,5 +142,30 @@ $(document).ready(function() {
         $(this).toggleClass('clicked').siblings().removeClass('clicked');
     });
 
+    $('#11').on('click', function() {
+      $('html, body').animate({
+      scrollTop: $('#11').offset().top - 100}, 1000);
+    });
+
+    $('#12').on('click', function() {
+      $('html, body').animate({
+      scrollTop: $('#12').offset().top - 100}, 1000);
+    });
+
+    $('#13').on('click', function() {
+      $('html, body').animate({
+      scrollTop: $('#13').offset().top - 100}, 1000);
+    });
+
+    $('#14').on('click', function() {
+      $('html, body').animate({
+      scrollTop: $('#14').offset().top - 100}, 1000);
+    });
+
+    $('#15').on('click', function() {
+      $('html, body').animate({
+      scrollTop: $('#15').offset().top - 100}, 1000);
+    });
+
 
   });
