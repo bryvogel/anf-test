@@ -15,10 +15,10 @@ $(document).ready(function() {
         });
 
 
-        $(':radio').change(function (event) {
-            var id = $(this).data('id');
-            $('#' + id).removeClass('hide').siblings().addClass('hide');
-        });
+        // $(':radio').change(function (event) {
+        //     var id = $(this).data('id');
+        //     $('#' + id).removeClass('hide').siblings().addClass('hide');
+        // });
 
 
         /***************** Bag Validation ******************/
@@ -139,7 +139,7 @@ $(document).ready(function() {
     /***************** Image Resize ******************/
 
     $('.product').on('click', function() {
-        $(this).toggleClass('clicked').siblings().removeClass('clicked');
+        $(this).toggleClass('clicked');
     });
 
 
