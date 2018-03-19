@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/cloudzoom.css" />
-	<link rel="stylesheet" type="text/css" href="css/mag.css" />
+	<link rel="stylesheet" type="text/css" href="css/magnifier.css">
 	<link rel="stylesheet" href="scss/pdp-images_8.css">
 
   <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/redmond/jquery-ui.css">
@@ -413,11 +413,13 @@
 	<!-- JS CDNs -->
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
-	<!-- <script type="text/javascript" src="js/cloudzoom.js"></script>
-<script type="text/javascript">
-		CloudZoom.quickStart();
-</script> -->
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<script type="text/javascript" src="js/Event.js"></script>
+	<script type="text/javascript" src="js/Magnifier.js"></script>
+	<script type="text/javascript">
+	var evt = new Event(),
+	    m = new Magnifier(evt);
+	</script>
 
 
 
