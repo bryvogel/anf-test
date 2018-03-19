@@ -142,5 +142,11 @@ $(document).ready(function() {
         $(this).toggleClass('clicked').siblings().removeClass('clicked');
     });
 
+    m.attach({
+        thumb: '.cloudzoom',
+        largeWrapper: 'preview',
+        zoomable: true
+
+    });
 
   });

@@ -1,9 +1,8 @@
 .magnifier-thumb-wrapper {
     position: relative;
-    display: block;
     top: 0;
-    left: 0
-}
+    left: 0;
+  }
 
 .magnifier-lens {
     position: absolute;

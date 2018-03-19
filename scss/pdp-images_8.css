@@ -534,11 +534,12 @@ Scrollable Area
     display: inline-block;
     margin: 0 10px 25px 0; }
   .product-page__main-container .product-images {
-    display: block; }
+    display: flex;
+    flex-wrap: wrap; }
     .product-page__main-container .product-images .hide {
       display: none;
       transition: 300ms; }
-    .product-page__main-container .product-images img {
+    .product-page__main-container .product-images .product {
       max-width: 380px;
       width: 46%;
       height: auto;
@@ -551,6 +552,9 @@ Scrollable Area
       max-width: 618px;
       transition: 500ms;
       cursor: zoom-out; }
+    .product-page__main-container .product-images img {
+      width: 100%;
+      height: auto; }
   .product-page__main-container .product-info {
     width: 335px;
     padding-bottom: 35px;

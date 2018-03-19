@@ -492,14 +492,16 @@ Scrollable Area
 
 
     .product-images {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+
 
         .hide {
             display: none;
             transition: 300ms;
         }
 
-        img {
+        .product {
             max-width: 380px;
             width: 46%;
             height: auto;
@@ -515,6 +517,13 @@ Scrollable Area
             transition: 500ms;
             cursor: zoom-out;
         }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+
 
 
     }
