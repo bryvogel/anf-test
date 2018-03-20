@@ -140,13 +140,13 @@ $(document).ready(function() {
 
     $('.product').on('click', function() {
         $(this).toggleClass('clicked').siblings().removeClass('clicked');
-        
+
     });
 
     m.attach({
         thumb: '.cloudzoom',
         largeWrapper: 'preview',
-        zoomable: false
+        zoomable: true
 
     });
 
