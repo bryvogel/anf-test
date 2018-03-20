@@ -506,9 +506,16 @@ Scrollable Area
             width: 46%;
             height: auto;
             margin-bottom: 15px;
-            margin-right: 10px;
+            margin-right: 15px;
             transition: 500ms;
             cursor: zoom-in;
+        }
+
+        .image {
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          // display: block;
         }
 
         .clicked {
@@ -519,8 +526,10 @@ Scrollable Area
         }
 
         img {
+            transition: opacity 500ms;
             width: 100%;
             height: auto;
+            display: block;
         }
     }
 
@@ -914,6 +923,13 @@ Scrollable Area
 
 }
 
+
+
+
+
+
+
+
 .test {
     background-color: #D00000;
     height: 40px;
@@ -1050,22 +1066,6 @@ Scrollable Area
     }
 }
 
-
-.product {
-  background-position: 50% 50%;
-  position: relative;
-  width: 500px;
-  overflow: hidden;
-  cursor: zoom-in;
-}
-.product img:hover {
-  opacity: 0;
-}
-.product img {
-  transition: opacity .5s;
-  display: block;
-  width: 100%;
-}
 
 
 

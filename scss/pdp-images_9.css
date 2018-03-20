@@ -544,17 +544,23 @@ Scrollable Area
       width: 46%;
       height: auto;
       margin-bottom: 15px;
-      margin-right: 10px;
+      margin-right: 15px;
       transition: 500ms;
       cursor: zoom-in; }
+    .product-page__main-container .product-images .image {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
     .product-page__main-container .product-images .clicked {
       width: 100%;
       max-width: 618px;
       transition: 500ms;
       cursor: zoom-out; }
     .product-page__main-container .product-images img {
+      transition: opacity 500ms;
       width: 100%;
-      height: auto; }
+      height: auto;
+      display: block; }
   .product-page__main-container .product-info {
     width: 335px;
     padding-bottom: 35px;
@@ -919,21 +925,6 @@ Scrollable Area
   #success img {
     width: 100%;
     height: auto; }
-
-.product {
-  background-position: 50% 50%;
-  position: relative;
-  width: 500px;
-  overflow: hidden;
-  cursor: zoom-in; }
-
-.product img:hover {
-  opacity: 0; }
-
-.product img {
-  transition: opacity .5s;
-  display: block;
-  width: 100%; }
 
 /* ==========================================================================
 Responsive Media Queries
