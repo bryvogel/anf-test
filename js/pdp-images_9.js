@@ -15,10 +15,10 @@ $(document).ready(function() {
         });
 
 
-        // $(':radio').change(function (event) {
-        //     var id = $(this).data('id');
-        //     $('#' + id).removeClass('hide').siblings().addClass('hide');
-        // });
+        $(':radio').change(function (event) {
+            var id = $(this).data('id');
+            $('#' + id).removeClass('hide').siblings().addClass('hide');
+        });
 
 
         /***************** Bag Validation ******************/
@@ -142,5 +142,17 @@ $(document).ready(function() {
         $(this).toggleClass('clicked').siblings().removeClass('clicked');
     });
 
+
+
+    /***************** Zoom ******************/
+
+    function zoom(e) {
+      var zoomer = e.currentTarget;
+      e.offsetX ? (offsetX = e.offsetX) : (offsetX = e.touches[0].pageX);
+      e.offsetY ? (offsetY = e.offsetY) : (offsetX = e.touches[0].pageX);
+      x = offsetX / zoomer.offsetWidth * 100;
+      y = offsetY / zoomer.offsetHeight * 100;
+      zoomer.style.backgroundPosition = x + "% " + y + "%";
+    }
 
   });
