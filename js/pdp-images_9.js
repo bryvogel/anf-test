@@ -47,6 +47,7 @@ $(document).ready(function() {
 
 
 
+        /***************** Image Change ******************/
 
         $('.swatch').click(function(){
         var radio_value = $(this).val();
@@ -105,6 +106,7 @@ $(document).ready(function() {
 
 
 
+        /***************** Smooth Scroll ******************/
 
 
 
@@ -143,10 +145,10 @@ $(document).ready(function() {
     });
 
 
-
     /***************** Zoom ******************/
 
-    (function() {
+     (function() {
+
       // Get all images with the `detail-view` class
       var zoomBoxes = document.querySelectorAll('.detail-view');
 
@@ -196,6 +198,5 @@ $(document).ready(function() {
         imageSrc.src = imageUrl;
       });
     })();
-
 
   });
