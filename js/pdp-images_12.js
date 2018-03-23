@@ -120,17 +120,6 @@ $(document).ready(function() {
             $('html,body').animate({scrollTop:dest}, 1000,'swing');
         });
 
-        $(".scroll2").click(function(event){
-                event.preventDefault();
-                //calculate destination place
-                var dest=0;
-                if($(this.hash).offset().top > $(document).height()-$(window).height()){
-                     dest=$(document).height()-$(window).height();
-                }else{
-                     dest=$(this.hash).offset().top -80;
-                }
-                $('html,body').animate({scrollTop:dest}, 500,'swing');
-            });
 
 
     /***************** Responsive Nav ******************/
@@ -226,34 +215,33 @@ $(document).ready(function() {
 
         return false;
 
-    })
+    });
 
 
-    $(window).scroll(function() {
-        var windscroll = $(window).scrollTop();
-        if (windscroll >= 55) {
-            $('.wayfinding').addClass('stay');
-            // $('.product-info').addClass('stay2');
-            // $('.product-images img').each(function(i) {
-            //     if ($(this).position().top <= windscroll - 30) {
-            //         $('.wayfinding div.selected').toggleClass('selected');
-            //         $('.wayfinding div').eq(i).toggleClass('selected');
-            //     }
-            // });
-
-        } else {
-
-            $('.wayfinding').removeClass('stay');
-            // $('.product-info').removeClass('stay2');
-            // $('.wayfinding div.selected').removeClass('selected');
-            // $('.wayfinding div:first').addClass('selected');
-        }
-
-    }).scroll();
-
-
+    // $(window).scroll(function() {
+    //     var windscroll = $(window).scrollTop();
+    //     if (windscroll >= 55) {
+    //         $('.wayfinding').addClass('stay');
+    //         // $('.product-info').addClass('stay2');
+    //         // $('.product-images img').each(function(i) {
+    //         //     if ($(this).position().top <= windscroll - 30) {
+    //         //         $('.wayfinding div.selected').toggleClass('selected');
+    //         //         $('.wayfinding div').eq(i).toggleClass('selected');
+    //         //     }
+    //         // });
+    //
+    //     } else {
+    //
+    //         $('.wayfinding').removeClass('stay');
+    //         // $('.product-info').removeClass('stay2');
+    //         // $('.wayfinding div.selected').removeClass('selected');
+    //         // $('.wayfinding div:first').addClass('selected');
+    //     }
+    //
+    // }).scroll();
 
 
+$("#space").stick_in_parent();
 
 
 

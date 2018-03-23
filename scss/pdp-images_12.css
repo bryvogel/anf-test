@@ -497,8 +497,6 @@ Main Nav
 Scrollable Area
 ========================================================================== */
 #scroll {
-  -webkit-overflow-scrolling: touch;
-  overflow-x: hidden;
   margin-top: 57px; }
 
 .upper-breadcrumb {
@@ -517,8 +515,7 @@ Scrollable Area
 .product-page__main-container {
   margin: 44px auto 0;
   max-width: 1000px;
-  display: flex;
-  height: inherit; }
+  display: flex; }
   .product-page__main-container .header {
     margin: 0 0 5px; }
     .product-page__main-container .header a {
@@ -543,18 +540,18 @@ Scrollable Area
     width: 36px;
     margin-right: 10px;
     z-index: 0; }
-    .product-page__main-container .wayfinding .selector {
+    .product-page__main-container .wayfinding .thumb {
       display: inline-block;
       vertical-align: top;
       width: 15px;
       height: 15px;
       background-color: #CCCCCC;
       transition: 100ms; }
-      .product-page__main-container .wayfinding .selector:hover, .product-page__main-container .wayfinding .selector:focus, .product-page__main-container .wayfinding .selector.selected {
+      .product-page__main-container .wayfinding .thumb:hover, .product-page__main-container .wayfinding .thumb:focus, .product-page__main-container .wayfinding .thumb.selected {
         background-color: #666666;
         cursor: pointer;
         transition: 100ms; }
-      .product-page__main-container .wayfinding .selector .hide {
+      .product-page__main-container .wayfinding .thumb .hide {
         display: none;
         transition: 300ms; }
     .product-page__main-container .wayfinding .big {

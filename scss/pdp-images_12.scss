@@ -436,8 +436,6 @@ Main Nav
 Scrollable Area
 ========================================================================== */
 #scroll {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: hidden;
     margin-top: 57px;
 }
 
@@ -466,7 +464,7 @@ Scrollable Area
     margin: 44px auto 0;
     max-width: 1000px;
     display: flex;
-    height: inherit;
+    // height: inherit;
 
 
     .header {
@@ -511,7 +509,7 @@ Scrollable Area
         margin-right: 10px;
         z-index: 0;
 
-        .selector {
+        .thumb {
             display: inline-block;
             vertical-align: top;
             width: 15px;
@@ -525,7 +523,7 @@ Scrollable Area
                 cursor: pointer;
                 transition: 100ms;
             }
-            
+
             .hide {
                 display: none;
                 transition: 300ms;
