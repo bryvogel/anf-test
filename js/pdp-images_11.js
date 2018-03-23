@@ -176,18 +176,18 @@ $(document).ready(function() {
         var windscroll = $(window).scrollTop();
         if (windscroll >= 55) {
             $('.wayfinding').addClass('stay');
-            $('.product-images img').each(function(i) {
-                if ($(this).position().top <= windscroll - 30) {
-                    $('.wayfinding div.selected').toggleClass('selected');
-                    $('.wayfinding div').eq(i).toggleClass('selected');
-                }
-            });
+            // $('.product-images img').each(function(i) {
+            //     if ($(this).position().top <= windscroll - 30) {
+            //         $('.wayfinding div.selected').toggleClass('selected');
+            //         $('.wayfinding div').eq(i).toggleClass('selected');
+            //     }
+            // });
 
         } else {
 
             $('.wayfinding').removeClass('stay');
-            $('.wayfinding div.selected').removeClass('selected');
-            $('.wayfinding div:first').addClass('selected');
+            // $('.wayfinding div.selected').removeClass('selected');
+            // $('.wayfinding div:first').addClass('selected');
         }
 
     }).scroll();
