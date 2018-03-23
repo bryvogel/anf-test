@@ -156,7 +156,7 @@ Main Nav
 .header-nav-wrapper
 {
     position: fixed;
-    z-index: 1;
+    z-index: 500;
 
     display: inline-block;
 
@@ -462,10 +462,15 @@ Scrollable Area
 
 .product-page__main-container {
     margin: 44px auto 0;
-    max-width: 1000px;
-    display: flex;
+    max-width: 1025px;
+    // display: flex;
+    position: relative;
     // height: inherit;
 
+    + div {
+        display: inline-block;
+        vertical-align: top;
+    }
 
     .header {
         margin: 0 0 5px;
@@ -481,8 +486,6 @@ Scrollable Area
             line-height: 36px;
         }
     }
-
-
 
     #thumb-container {
       width: calc(100% - 345px);
@@ -502,12 +505,13 @@ Scrollable Area
         // height: 100%;
         // float: left;
         display: block;
+        position: absolute;
+        z-index: 300;
     }
 
     .wayfinding {
-        width: 36px;
+        width: 46px;
         margin-right: 10px;
-        z-index: 0;
 
         .thumb {
             display: inline-block;
@@ -537,10 +541,10 @@ Scrollable Area
 
     }
 
-
     .product-images {
         display: flex;
         flex-wrap: wrap;
+        padding-left: 46px;
 
         .hide {
             display: none;
@@ -555,6 +559,7 @@ Scrollable Area
             margin-right: 15px;
             transition: 500ms;
             cursor: zoom-in;
+            z-index: 5;
         }
 
         .image {
@@ -571,7 +576,6 @@ Scrollable Area
         }
 
         img {
-            transition: opacity 500ms;
             width: 100%;
             height: auto;
             display: block;
@@ -581,8 +585,8 @@ Scrollable Area
     .product-info {
         width: 335px;
         padding-bottom: 35px;
-        vertical-align: top;
-        display: block;
+        position: absolute;
+        right: 0;
 
 
 

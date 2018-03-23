@@ -240,9 +240,13 @@ $(document).ready(function() {
     //
     // }).scroll();
 
+    $(".sticky").stick_in_parent({
+    	offset_top: 80
+    });
 
-$("#space").stick_in_parent();
 
-
+    $(".sticky2").stick_in_parent({
+    	offset_top: 80
+    });
 
 });

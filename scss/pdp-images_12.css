@@ -317,7 +317,7 @@ Main Nav
 ========================================================================== */
 .header-nav-wrapper {
   position: fixed;
-  z-index: 1;
+  z-index: 500;
   display: inline-block;
   width: 100%;
   height: 57px;
@@ -514,8 +514,11 @@ Scrollable Area
 
 .product-page__main-container {
   margin: 44px auto 0;
-  max-width: 1000px;
-  display: flex; }
+  max-width: 1025px;
+  position: relative; }
+  .product-page__main-container + div {
+    display: inline-block;
+    vertical-align: top; }
   .product-page__main-container .header {
     margin: 0 0 5px; }
     .product-page__main-container .header a {
@@ -535,11 +538,12 @@ Scrollable Area
     width: 100%; }
   .product-page__main-container #space {
     width: 46px;
-    display: block; }
+    display: block;
+    position: absolute;
+    z-index: 300; }
   .product-page__main-container .wayfinding {
-    width: 36px;
-    margin-right: 10px;
-    z-index: 0; }
+    width: 46px;
+    margin-right: 10px; }
     .product-page__main-container .wayfinding .thumb {
       display: inline-block;
       vertical-align: top;
@@ -559,7 +563,8 @@ Scrollable Area
       height: 35px; }
   .product-page__main-container .product-images {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-left: 46px; }
     .product-page__main-container .product-images .hide {
       display: none;
       transition: 300ms; }
@@ -570,7 +575,8 @@ Scrollable Area
       margin-bottom: 15px;
       margin-right: 15px;
       transition: 500ms;
-      cursor: zoom-in; }
+      cursor: zoom-in;
+      z-index: 5; }
     .product-page__main-container .product-images .image {
       background-position: center;
       background-repeat: no-repeat;
@@ -581,15 +587,14 @@ Scrollable Area
       transition: 500ms;
       cursor: zoom-out; }
     .product-page__main-container .product-images img {
-      transition: opacity 500ms;
       width: 100%;
       height: auto;
       display: block; }
   .product-page__main-container .product-info {
     width: 335px;
     padding-bottom: 35px;
-    vertical-align: top;
-    display: block; }
+    position: absolute;
+    right: 0; }
     .product-page__main-container .product-info .product-header {
       border-bottom: 1px solid #dad9d0;
       margin-bottom: 25px;
