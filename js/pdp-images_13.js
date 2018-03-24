@@ -139,9 +139,9 @@ $(document).ready(function() {
 
     /***************** Image Resize ******************/
 
-    $('.product').on('click', function() {
-        $(this).toggleClass('clicked');
-    });
+    // $('.product').on('click', function() {
+    //     $(this).toggleClass('clicked');
+    // });
 
 
     /***************** Zoom ******************/
