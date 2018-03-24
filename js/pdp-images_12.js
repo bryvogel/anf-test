@@ -218,35 +218,18 @@ $(document).ready(function() {
     });
 
 
-    // $(window).scroll(function() {
-    //     var windscroll = $(window).scrollTop();
-    //     if (windscroll >= 55) {
-    //         $('.wayfinding').addClass('stay');
-    //         // $('.product-info').addClass('stay2');
-    //         // $('.product-images img').each(function(i) {
-    //         //     if ($(this).position().top <= windscroll - 30) {
-    //         //         $('.wayfinding div.selected').toggleClass('selected');
-    //         //         $('.wayfinding div').eq(i).toggleClass('selected');
-    //         //     }
-    //         // });
-    //
-    //     } else {
-    //
-    //         $('.wayfinding').removeClass('stay');
-    //         // $('.product-info').removeClass('stay2');
-    //         // $('.wayfinding div.selected').removeClass('selected');
-    //         // $('.wayfinding div:first').addClass('selected');
-    //     }
-    //
-    // }).scroll();
+    /***************** Sticky Rails ******************/
 
-    $(".sticky").stick_in_parent({
+
+
+    $("#space, .product-info").stick_in_parent({
     	offset_top: 80
     });
 
 
-    $(".sticky2").stick_in_parent({
-    	offset_top: 80
-    });
+    $("#space, .product-info")
+    .on('sticky_kit:bottom', function(e) {
+    $(this).parent().css('position', 'static');
+    })
 
 });

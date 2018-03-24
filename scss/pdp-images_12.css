@@ -497,7 +497,8 @@ Main Nav
 Scrollable Area
 ========================================================================== */
 #scroll {
-  margin-top: 57px; }
+  margin-top: 57px;
+  position: relative; }
 
 .upper-breadcrumb {
   background-color: #f6f6f6;
@@ -515,7 +516,8 @@ Scrollable Area
 .product-page__main-container {
   margin: 44px auto 0;
   max-width: 1025px;
-  position: relative; }
+  position: relative;
+  height: auto; }
   .product-page__main-container + div {
     display: inline-block;
     vertical-align: top; }
@@ -583,18 +585,22 @@ Scrollable Area
       background-size: contain; }
     .product-page__main-container .product-images .clicked {
       width: 100%;
-      max-width: 618px;
+      max-width: 600px;
       transition: 500ms;
       cursor: zoom-out; }
     .product-page__main-container .product-images img {
       width: 100%;
       height: auto;
       display: block; }
+  .product-page__main-container #float {
+    float: right;
+    width: 335px;
+    z-index: 300; }
   .product-page__main-container .product-info {
     width: 335px;
     padding-bottom: 35px;
     position: absolute;
-    right: 0; }
+    top: 0; }
     .product-page__main-container .product-info .product-header {
       border-bottom: 1px solid #dad9d0;
       margin-bottom: 25px;

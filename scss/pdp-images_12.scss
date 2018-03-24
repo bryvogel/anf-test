@@ -437,6 +437,7 @@ Scrollable Area
 ========================================================================== */
 #scroll {
     margin-top: 57px;
+    position: relative;
 }
 
 .upper-breadcrumb {
@@ -463,9 +464,9 @@ Scrollable Area
 .product-page__main-container {
     margin: 44px auto 0;
     max-width: 1025px;
-    // display: flex;
     position: relative;
-    // height: inherit;
+    height: auto;
+    // display: inline-block;
 
     + div {
         display: inline-block;
@@ -570,7 +571,7 @@ Scrollable Area
 
         .clicked {
             width: 100%;
-            max-width: 618px;
+            max-width: 600px;
             transition: 500ms;
             cursor: zoom-out;
         }
@@ -582,11 +583,17 @@ Scrollable Area
         }
     }
 
+    #float {
+        float: right;
+        width: 335px;
+        z-index: 300;
+    }
+
     .product-info {
         width: 335px;
         padding-bottom: 35px;
         position: absolute;
-        right: 0;
+        top: 0;
 
 
 
