@@ -516,6 +516,7 @@ Scrollable Area
 .product-page__main-container {
   margin: 44px auto 0;
   max-width: 1025px;
+  position: relative;
   height: auto;
   min-height: 998px; }
   .product-page__main-container + div {
@@ -533,8 +534,11 @@ Scrollable Area
   .product-page__main-container #thumb-container {
     width: calc(100% - 345px);
     max-width: 800px;
-    display: inline-block;
+    display: block;
     margin: 0 10px 25px 0; }
+  .product-page__main-container .images {
+    display: inline;
+    width: 100%; }
   .product-page__main-container #space {
     width: 46px;
     display: block;
@@ -579,7 +583,7 @@ Scrollable Area
     .product-page__main-container .product-images .image {
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: contain; }
     .product-page__main-container .product-images .clicked {
       width: 100%;
       max-width: 600px;

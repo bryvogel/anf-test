@@ -534,7 +534,7 @@ Scrollable Area
   .product-page__main-container #thumb-container {
     width: calc(100% - 345px);
     max-width: 800px;
-    display: inline-block;
+    display: block;
     margin: 0 10px 25px 0; }
   .product-page__main-container .images {
     display: inline;
@@ -596,7 +596,7 @@ Scrollable Area
   .product-page__main-container #float {
     float: right;
     width: 335px;
-    z-index: 600; }
+    z-index: 300; }
   .product-page__main-container .product-info {
     width: 335px;
     padding-bottom: 35px;
