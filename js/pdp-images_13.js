@@ -5,7 +5,7 @@ $(document).ready(function() {
 
         $(function() {
           $('.a').siblings().addClass('hide');
-          $('.5').siblings().addClass('hide');
+          $('.1').siblings().addClass('hide');
         });
 
 
