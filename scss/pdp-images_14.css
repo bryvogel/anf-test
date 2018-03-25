@@ -553,18 +553,19 @@ Scrollable Area
       width: 15px;
       height: 15px;
       background-color: #CCCCCC;
-      transition: 100ms; }
+      transition: 300ms; }
       .product-page__main-container .wayfinding .thumb:hover, .product-page__main-container .wayfinding .thumb:focus, .product-page__main-container .wayfinding .thumb.selected {
         background-color: #666666;
         cursor: pointer;
-        transition: 100ms; }
+        transition: 300ms; }
       .product-page__main-container .wayfinding .thumb .hide {
         display: none;
         transition: 300ms; }
     .product-page__main-container .wayfinding .big {
       width: 35px;
       height: 35px;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      transition: 300ms; }
   .product-page__main-container .product-images {
     display: flex;
     flex-wrap: wrap;
