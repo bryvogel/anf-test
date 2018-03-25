@@ -176,7 +176,7 @@ $(document).ready(function() {
                 x = e.pageX - this.offsetLeft,
                 y = e.pageY - this.offsetTop,
                 // Convert coordinates to % of elem. width & height
-                xPercent = x / (boxWidth / 80) + '%',
+                xPercent = x / (boxWidth / 60) + '%',
                 yPercent = y / (boxWidth * ratio / 80) + '%';
 
             // Update styles w/actual size
