@@ -141,6 +141,11 @@ $(document).ready(function() {
 
     $('.product').on('click', function() {
         $(this).toggleClass('clicked');
+
+        var box = $(this).data('anchor');
+        $('.' + box).toggleClass('big').siblings().removeClass('big');
+
+
     });
 
 
