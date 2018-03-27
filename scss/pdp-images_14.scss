@@ -984,7 +984,11 @@ Scrollable Area
 
 }
 
-
+.selected {
+    background-color: #666666;
+    cursor: pointer;
+    transition: 300ms;
+}
 
 
 

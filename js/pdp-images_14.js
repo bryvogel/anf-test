@@ -237,4 +237,47 @@ $(document).ready(function() {
 
 
 
+
+    var project1 = $('.product:nth-of-type(1)').offset();
+    var project2 = $('.product:nth-of-type(2)').offset();
+    var project3 = $('.product:nth-of-type(3)').offset();
+    var project4 = $('.product:nth-of-type(4)').offset();
+    var project5 = $('.product:nth-of-type(5)').offset();
+    var project6 = $('.product:nth-of-type(6)').offset();
+    var $window = $(window);
+
+    $('.product').on('click', function() {
+        $(this).toggleClass('clicked');
+
+        var box = $(this).data('anchor');
+        $('.' + box).toggleClass('big').siblings().removeClass('big');
+
+    });
+
+
+    $window.scroll(function() {
+        if ( $window.scrollTop() >= project1.top) {
+          $('.thumb').addClass('.selected');
+        }
+        if ( $window.scrollTop() >= project2.top ) {
+          $('.thumb').addClass('.selected');
+        }
+        if ( $window.scrollTop() >= project3.top ) {
+          $('.thumb').addClass('.selected');
+        }
+        if ( $window.scrollTop() >= project4.top ) {
+          $('.thumb').addClass('.selected');
+        }
+        if ( $window.scrollTop() >= project5.top ) {
+          $('.thumb').addClass('.selected');
+        }
+        if ( $window.scrollTop() >= project6.top ) {
+          $('.thumb').addClass('.selected');
+        }
+    });
+
+
+
+
+
 });

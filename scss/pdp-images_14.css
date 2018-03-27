@@ -856,6 +856,11 @@ Scrollable Area
         width: 335px;
         margin-top: 30px; }
 
+.selected {
+  background-color: #666666;
+  cursor: pointer;
+  transition: 300ms; }
+
 .test {
   background-color: #D00000;
   height: 40px;
