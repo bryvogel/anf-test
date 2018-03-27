@@ -137,19 +137,12 @@ $(document).ready(function() {
     });
 
 
-    /***************** Image Resize ******************/
 
-    $('.product').on('click', function() {
-        $(this).toggleClass('clicked');
-
-        var box = $(this).data('anchor');
-        $('.' + box).toggleClass('big').siblings().removeClass('big');
-
-
-    });
 
 
     /***************** Zoom ******************/
+
+
 
      (function() {
 
@@ -219,6 +212,31 @@ $(document).ready(function() {
         }, 500,'swing');
 
         return false;
+
+    });
+
+
+    $('.product').on('click', function() {
+
+        var scrollAnchor = $(this).attr('data-scroll'),
+            scrollPoint = $('div[data-anchor="' + scrollAnchor + '"]').offset().top - 80;
+
+        $('body,html').animate({
+            scrollTop: scrollPoint
+        }, 500,'swing');
+
+        return false;
+
+    });
+
+    /***************** Image Resize ******************/
+
+    $('.product').on('click', function() {
+        $(this).toggleClass('clicked');
+
+        var box = $(this).data('anchor');
+        $('.' + box).toggleClass('big').siblings().removeClass('big');
+
 
     });
 
