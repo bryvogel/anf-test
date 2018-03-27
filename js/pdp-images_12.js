@@ -216,18 +216,18 @@ $(document).ready(function() {
     });
 
 
-    $('.product').on('click', function() {
-
-        var scrollAnchor = $(this).attr('data-scroll'),
-            scrollPoint = $('div[data-anchor="' + scrollAnchor + '"]').offset().top - 80;
-
-        $('body,html').animate({
-            scrollTop: scrollPoint
-        }, 500,'swing');
-
-        return false;
-
-    });
+    // $('.product').on('click', function() {
+    //
+    //     var scrollAnchor = $(this).attr('data-scroll'),
+    //         scrollPoint = $('div[data-anchor="' + scrollAnchor + '"]').offset().top - 80;
+    //
+    //     $('body,html').animate({
+    //         scrollTop: scrollPoint
+    //     }, 500,'swing');
+    //
+    //     return false;
+    //
+    // });
 
     /***************** Image Resize ******************/
 
@@ -236,7 +236,6 @@ $(document).ready(function() {
 
         var box = $(this).data('anchor');
         $('.' + box).toggleClass('big').siblings().removeClass('big');
-
 
     });
 
