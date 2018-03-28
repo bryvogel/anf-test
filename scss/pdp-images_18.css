@@ -514,7 +514,7 @@ Scrollable Area
       color: #777; }
 
 .product-page__main-container {
-  margin: 44px 10% 0;
+  margin: 44px 80px 0;
   max-width: 1500px;
   position: relative;
   height: auto;
@@ -532,7 +532,7 @@ Scrollable Area
       margin: 0;
       line-height: 36px; }
   .product-page__main-container #thumb-container {
-    width: calc(100% - 345px);
+    width: calc(100% - 340px);
     display: block;
     margin: 0 10px 25px 0; }
   .product-page__main-container .images {
@@ -977,6 +977,10 @@ Scrollable Area
 /* ==========================================================================
 Responsive Media Queries
 ========================================================================== */
+@media screen and (min-width: 1500px) {
+  .product-page__main-container {
+    margin: 44px auto 0;
+    max-width: 1450px; } }
 @media screen and (max-width: 1024px) {
   .primary-nav-wrapper {
     position: fixed;
