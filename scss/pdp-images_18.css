@@ -562,7 +562,8 @@ Scrollable Area
         transition: 300ms; }
     .product-page__main-container .wayfinding .big {
       width: 35px;
-      height: 35px; }
+      height: 35px;
+      margin-bottom: 5px; }
   .product-page__main-container .product-images {
     display: flex;
     flex-wrap: wrap;
@@ -584,7 +585,6 @@ Scrollable Area
       background-size: contain; }
     .product-page__main-container .product-images .clicked {
       width: 100%;
-      max-width: 600px;
       transition: 500ms;
       cursor: zoom-out; }
     .product-page__main-container .product-images img {
@@ -1009,4 +1009,4 @@ Responsive Media Queries
   #scroll {
     margin-top: 46px; } }
 
-/*# sourceMappingURL=pdp-images_13.css.map */
+/*# sourceMappingURL=pdp-images_18.css.map */

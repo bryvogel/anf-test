@@ -539,6 +539,7 @@ Scrollable Area
         .big {
             width: 35px;
             height: 35px;
+            margin-bottom: 5px;
         }
 
     }
@@ -572,7 +573,7 @@ Scrollable Area
 
         .clicked {
             width: 100%;
-            max-width: 600px;
+            // max-width: 600px;
             transition: 500ms;
             cursor: zoom-out;
         }
