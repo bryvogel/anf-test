@@ -520,13 +520,13 @@ Scrollable Area
             width: 15px;
             height: 15px;
             background-color: #CCCCCC;
-            transition: 100ms;
+            transition: 500ms;
 
 
             &:hover, &:focus, &.selected {
                 background-color: #666666;
                 cursor: pointer;
-                transition: 100ms;
+                transition: 500ms;
             }
 
             .hide {
